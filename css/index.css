@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Bebas Regular';
+	src: url(../fonts/Bebas-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Bebas Light';
+	src: url(../fonts/Bebas-Light.ttf)
+}
+
+body {
+	margin: 0%;
+	background: #151515;
+}
+
+.block_describing, .block_contact, #vk_groups {
+	margin-right: 15%;
+	margin-left: 15%;
+}
+
+#vk_groups {
+	margin-top: 40px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#logo {
+	margin: 10% 10% 0% 10%
+}
+
+h1 {
+	font-size: 60px;
+	font-family: 'Bebas Regular';
+	color: #e8e8e8;
+	transform: skew(-6deg);
+	text-align: center;
+	margin: inherit;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: 'Bebas Light';
+	color: #e8e8e8;
+	transform: skew(-6deg);
+	text-align: center;
+	margin: inherit;
+}
+
+.title {
+	margin-top: 40px;
+}
+
+button {
+	height: 60px;
+	width: 170px;
+	margin-left: 35px;
+	margin-right: 35px;
+	color: #E8E8E8;
+	border: none;
+	transform: skew(-6deg);
+	margin-bottom: 60px;
+}
+
+button:hover {
+	box-shadow: inset -5px -5px 0px #c1c1c1;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.button_text {
+	color: #131313;
+	font-family: 'Bebas Regular';
+	font-size: 30px;
+}
+
+.buttons {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+hr {
+	height: 5px;
+	background: #c1c1c1;
+	margin-right: 20%;
+	margin-left: 20%;
+	border-style: none;
+	transform: skew(6deg);
+}
+
+.desciption {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.welcome {
+	border-bottom: 5px solid #c1c1c1;
+	margin-bottom: 10px;
+}
+
+.ucanfind {
+	margin-bottom: 40px
+}
+
+.copyright {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 10%;
+	margin-left: 10%;
+}
