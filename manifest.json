@@ -2,8 +2,8 @@
     "version": "1.1",
     "api_version": 1,
     "layout": {
-        "logo": "http://w1c.ru/tableau.png",
-        "color": "#fefefe",
+        "logo": "https://vertexofvortex.github.io/images/lable.png",
+        "color": "#151515",
         "show_title": false
     },
     "feed": {
