@@ -1,0 +1,19 @@
+{
+    "version": "1.1",
+    "api_version": 1,
+    "layout": {
+        "logo": "http://w1c.ru/tableau.png",
+        "color": "#fefefe",
+        "show_title": false
+    },
+    "feed": {
+        "url": "http://w1c.ru/messages",
+        "format": "json",
+        "notifiers": [
+            {
+                "name": "messages",
+                "icon": "%CHAT%"
+            }
+        ]
+    }
+}
