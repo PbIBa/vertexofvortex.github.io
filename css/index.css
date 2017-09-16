@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Roboto Slab Regular';
+	src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto Slab Bold';
+	src: url(../fonts/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto Slab Light';
+	src: url(../fonts/RobotoSlab-Light.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto Regular';
+	src: url(../fonts/Roboto-Regular.ttf)
+}
+
+html {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background: black;
+}
+
+button {
+	outline: none;
+}
+
+.logo {
+	background: black;
+	width: 50%;
+	height: auto;
+	padding-top: 100px;
+	transform: skewY(0deg);
+	transition: 3s;
+}
+
+.logo:hover {
+	transform: skewY(-3deg);
+	transition: 0.5s;
+}
+
+.block {
+	max-width: 100%;
+	padding: 50px;
+}
+
+.block#about {
+	margin-top: 100px;
+	background: white;
+	text-align: justify;
+}
+
+.block#projects {
+	
+}
+
+.block#contacts {
+	background: white;
+}
+
+.text#block {
+	font-family: 'Roboto Slab Regular';
+	font-size: 14pt;
+	margin-bottom: 100px;
+}
+
+.text#button {
+	color: white;
+}
+
+button#default {
+	height: 45px;
+	background: none;
+	border: 2px solid white;
+	font-family: 'Roboto Regular';
+	font-size: 13pt;
+	transition: 0.5s;
+	margin-top: 10px;
+}
+
+button#default:hover {
+	transform: translateX(10px);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+button#arrowdown {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+h1 {
+	margin-top: 0px;
+	font-family: 'Roboto Slab Bold';
+}
+
+table {
+	width: 100%;
+}
+
+td {
+	height: 900px;
+}
+
+.arrowdown {
+	width: 100px;
+	height: 100px;
+	padding-top: 100px;
+	transition: 2s;
+}
+
+.arrowdown:hover {
+	transform: translate(0,15px);
+	transition: 0.5s;
+}
