@@ -31,6 +31,7 @@ body {
 
 button {
 	outline: none;
+	cursor: pointer;
 }
 
 .logo {
@@ -50,12 +51,18 @@ button {
 .block {
 	max-width: 100%;
 	padding: 50px;
+	text-align: justify;
 }
 
+/*.block#image {
+	margin: 0px;
+	max-width: 100%;
+	padding: 0px;
+	max-height: 500px;
+}*/
+
 .block#about {
-	margin-top: 100px;
 	background: white;
-	text-align: justify;
 }
 
 .block#projects {
@@ -64,6 +71,36 @@ button {
 
 .block#contacts {
 	background: white;
+}
+
+.block#activity {
+	padding: 0px;
+}
+
+td#card {
+	background: white;
+	font-family: 'Roboto Slab Regular';
+	font-size: 14pt;
+	padding: 30px;
+	vertical-align: top;
+	margin: 0px;
+	transition: 1s ease;
+}
+
+td#card:hover {
+	transform: translateY(-25px) scale(1.02);
+	transition: 1s ease;
+}
+
+td#card.middle {
+	background: white;
+	margin: 0px;
+}
+
+#activitytable {
+	border-spacing: 50px;
+	width: 100%;
+	margin: 0px;
 }
 
 .text#block {
@@ -76,6 +113,10 @@ button {
 	color: white;
 }
 
+.text#button:hover {
+	
+}
+
 button#default {
 	height: 45px;
 	background: none;
@@ -84,41 +125,64 @@ button#default {
 	font-size: 13pt;
 	transition: 0.5s;
 	margin-top: 10px;
+	line-height: 100%;
+	color: white;
 }
 
 button#default:hover {
 	transform: translateX(10px);
 	transition: 0.5s;
 	cursor: pointer;
+	background: white;
+	color: black;
 }
 
 button#arrowdown {
 	background: none;
 	border: none;
-	cursor: pointer;
+}
+
+h1, h2 {
+	margin-top: 0px;
+	font-family: 'Roboto Slab Bold';
 }
 
 h1 {
+	font-size: auto;
+}
+
+h2 {
 	margin-top: 0px;
-	font-family: 'Roboto Slab Bold';
+	font-size: 40pt;
+	margin-bottom: 0px;
 }
 
 table {
 	width: 100%;
 }
 
-td {
-	height: 900px;
+td#firstpage {
+	height: 1000px;
 }
 
 .arrowdown {
 	width: 100px;
 	height: 100px;
-	padding-top: 100px;
+	padding-top: 50px;
 	transition: 2s;
+	animation: float 5s infinite ease;
 }
 
 .arrowdown:hover {
-	transform: translate(0,15px);
-	transition: 0.5s;
+	opacity: 50%;
+}
+
+img#incard {
+	margin-bottom: 15px;
+}
+
+@keyframes float {
+	0% {transform: translate(0,-25px);}
+	50% {transform: translate(0,25px);}
+	100% {transform: translate(0,-25px);}
 }
