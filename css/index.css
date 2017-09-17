@@ -92,11 +92,6 @@ td#card:hover {
 	transition: 1s ease;
 }
 
-td#card.middle {
-	background: white;
-	margin: 0px;
-}
-
 #activitytable {
 	border-spacing: 50px;
 	width: 100%;
@@ -141,14 +136,12 @@ button#default2 {
 	font-family: 'Roboto Regular';
 	font-size: 13pt;
 	transition: 0.5s;
-	margin-top: 10px;
 	line-height: 100%;
 	color: black;
-	margin-right: 30px;
+	width: 100%;
 }
 
 button#default2:hover {
-	transform: translateY(-10px);
 	cursor: pointer;
 	background: black;
 	color: white;
@@ -163,6 +156,11 @@ button#arrowdown {
 button#arrowdown:hover {
 	transform: scale(1.1);
 	transition: 0.5s;
+}
+
+button#default2:active {
+	border: 2px solid white;
+	outline: 2px solid black;
 }
 
 h1, h2 {
@@ -193,7 +191,7 @@ td#firstpage {
 	height: 100px;
 	padding-top: 50px;
 	transition: 2s;
-	animation: float 5s infinite ease;
+	animation: float_ver 5s infinite ease;
 }
 
 .arrowdown:hover {
@@ -204,8 +202,49 @@ img#incard {
 	margin-bottom: 15px;
 }
 
-@keyframes float {
+td.buttons {
+	align-content: center;
+}
+
+table.buttons {
+	
+}
+
+footer {
+	height: 100px;
+	color: white;
+	font-family: 'Roboto Slab Light';
+	font-size: 20pt;
+}
+
+table.footer {
+	height: 100%;
+}
+
+td.footer {
+	height: 100%;
+	/*animation: float_hor 5s infinite ease;*/
+}
+
+@keyframes float_ver {
 	0% {transform: translate(0,-25px);}
 	50% {transform: translate(0,25px);}
 	100% {transform: translate(0,-25px);}
+}
+
+@keyframes float_hor {
+	0% {transform: translate(25px);}
+	50% {transform: translate(-25px);}
+	100% {transform: translate(25px);}
+}
+
+
+@media screen and (max-width: 1050px) {
+	.block {
+		text-align: left;
+	}
+	
+	table#activitytable {
+		max-width: 1050px;
+	}
 }
