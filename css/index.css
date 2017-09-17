@@ -44,7 +44,7 @@ button {
 }
 
 .logo:hover {
-	transform: skewY(-3deg);
+	transform: skewY(-3deg) scale(1.1);
 	transition: 0.5s;
 }
 
@@ -109,14 +109,6 @@ td#card.middle {
 	margin-bottom: 100px;
 }
 
-.text#button {
-	color: white;
-}
-
-.text#button:hover {
-	
-}
-
 button#default {
 	height: 45px;
 	background: none;
@@ -127,19 +119,50 @@ button#default {
 	margin-top: 10px;
 	line-height: 100%;
 	color: white;
+	margin-right: 30px;
 }
 
 button#default:hover {
 	transform: translateX(10px);
-	transition: 0.5s;
 	cursor: pointer;
 	background: white;
 	color: black;
 }
 
+button#default:active {
+	border: 2px solid black;
+	outline: 2px solid white;
+}
+
+button#default2 {
+	height: 45px;
+	background: none;
+	border: 2px solid black;
+	font-family: 'Roboto Regular';
+	font-size: 13pt;
+	transition: 0.5s;
+	margin-top: 10px;
+	line-height: 100%;
+	color: black;
+	margin-right: 30px;
+}
+
+button#default2:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+	background: black;
+	color: white;
+}
+	
 button#arrowdown {
 	background: none;
 	border: none;
+	transition: 2s;
+}
+
+button#arrowdown:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
 }
 
 h1, h2 {
