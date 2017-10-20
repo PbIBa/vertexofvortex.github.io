@@ -80,7 +80,7 @@ button {
 td#card {
 	background: white;
 	font-family: 'Roboto Slab Regular';
-	font-size: 14pt;
+	/* font-size: 14pt; */
 	padding: 30px;
 	vertical-align: top;
 	margin: 0px;
