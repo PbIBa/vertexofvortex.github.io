@@ -41,6 +41,7 @@ button {
 	padding-top: 100px;
 	transform: skewY(0deg);
 	transition: 3s;
+	margin-bottom: 50px;
 }
 
 .logo:hover {
@@ -80,7 +81,7 @@ button {
 td#card {
 	background: white;
 	font-family: 'Roboto Slab Regular';
-	/* font-size: 14pt; */
+	/* font-size: 14pt; - ломает вёрстку */
 	padding: 30px;
 	vertical-align: top;
 	margin: 0px;
@@ -88,7 +89,7 @@ td#card {
 }
 
 td#card:hover {
-	transform: translateY(-25px) scale(1.02);
+	transform: translateY(-25px) scale(1.05);
 	transition: 1s ease;
 }
 
@@ -112,9 +113,9 @@ button#default {
 	font-size: 13pt;
 	transition: 0.5s;
 	margin-top: 10px;
-	line-height: 100%;
 	color: white;
 	margin-right: 30px;
+	padding: 0px 10px 0px 10px;
 }
 
 button#default:hover {
@@ -136,15 +137,17 @@ button#default2 {
 	font-family: 'Roboto Regular';
 	font-size: 13pt;
 	transition: 0.5s;
-	line-height: 100%;
+	margin-top: 10px;
 	color: black;
-	width: 100%;
+	margin-right: 30px;
+	padding: 0px 10px 0px 10px;
 }
 
 button#default2:hover {
 	cursor: pointer;
 	background: black;
 	color: white;
+	transform: translateX(10px);
 }
 	
 button#arrowdown {
@@ -189,7 +192,6 @@ td#firstpage {
 .arrowdown {
 	width: 100px;
 	height: 100px;
-	padding-top: 50px;
 	transition: 2s;
 	animation: float_ver 5s infinite ease;
 }
