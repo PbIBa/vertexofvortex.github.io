@@ -85,7 +85,7 @@ td#card {
 	padding: 30px;
 	vertical-align: top;
 	margin: 0px;
-	transition: 1s ease;
+	transition: 0.5s ease;
 }
 
 td#card:hover {
@@ -215,12 +215,14 @@ table.buttons {
 footer {
 	height: 100px;
 	color: white;
-	font-family: 'Roboto Slab Light';
-	font-size: 20pt;
+	font-family: 'Roboto';
+	font-size: 16pt;
+	line-height: 1pt;
 }
 
 table.footer {
 	height: 100%;
+	padding-left: 50px;
 }
 
 td.footer {
