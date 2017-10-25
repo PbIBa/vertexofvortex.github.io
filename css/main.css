@@ -194,6 +194,7 @@ td#firstpage {
 	height: 100px;
 	transition: 2s;
 	animation: float_ver 5s infinite ease;
+	animation-delay: 1s;
 }
 
 .arrowdown:hover {
@@ -231,9 +232,9 @@ td.footer {
 }
 
 @keyframes float_ver {
-	0% {transform: translate(0,-25px);}
-	50% {transform: translate(0,25px);}
-	100% {transform: translate(0,-25px);}
+	0% {transform: translate(0,0);}
+	50% {transform: translate(0,50px);}
+	100% {transform: translate(0,0);}
 }
 
 @keyframes float_hor {
