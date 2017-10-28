@@ -29,6 +29,7 @@ body {
 	width: 250px;
 	border-style: solid;
 	border-color: white;
+	border-radius: 2px;
 }
 
 #description {
@@ -54,4 +55,35 @@ button#more {
 	font-family: Intro-Light;
 	font-size: 14pt;
 	color: white;
+	margin-bottom: 200px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+button#more:hover {
+	background: white;
+	color: black;
+}
+
+.card {
+	background: white;
+	height: 400px;
+	font-family: Intro-Regular;
+	font-size: 16pt;
+	width: 33%;
+	vertical-align: baseline;
+	padding: 2%;
+	-webkit-box-shadow: 0px 5px 30px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 5px 30px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 5px 30px 0px rgba(50, 50, 50, 0.75);
+}
+
+.cards {
+	width: 100%;
+	border-spacing: 20px
+}
+
+.card img {
+	width: 100%;
+	padding-bottom: 30px;
 }
