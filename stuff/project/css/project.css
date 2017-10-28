@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Intro-Regular;
+	src: url(../fonts/Intro-Regular.otf);
+}
+
+@font-face {
+	font-family: Intro-Light;
+	src: url(../fonts/Intro-Light.otf);
+}
+
+body {
+	margin: 0px;
+}
+
+.block {
+	width: 100%;
+}
+
+.block#cover {
+	background: url(../images/cover.png);
+	background-attachment: fixed;
+	padding: 200px 0px 200px 0px;
+}
+
+.block#cover hr {
+	margin: 20px 0 40px 0;
+	width: 250px;
+	border-style: solid;
+	border-color: white;
+}
+
+#description {
+	color: white;
+	font-family: Intro-Light;
+	margin: 0px 10% 40px 10%;
+	font-size: 14pt;
+}
+
+h1 {
+	font-family: Intro-Regular;
+	font-size: 72pt;
+	color: white;
+	margin: 0 10% 0px 10%;
+}
+
+button#more {
+	height: 50px;
+	width: 250px;
+	border: 2px solid white;
+	background: none;
+	border-radius: 25px;
+	font-family: Intro-Light;
+	font-size: 14pt;
+	color: white;
+}
