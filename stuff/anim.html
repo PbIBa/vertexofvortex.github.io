@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <style>
+            body {
+                margin: 0px;;
+            }
+
+            #loading {
+                background: rgb(255, 196, 0);
+                width: 100px;
+                height: 100px;
+                transition: 1s ease;
+                animation: spin 1s infinite;
+                margin: 100px;
+            }
+
+            @keyframes spin {
+                0% {transform: rotateZ(0deg);}
+                50% {transform: rotateZ(180deg);}
+                100% {transform: rotateZ(360deg);}
+            }
+        </style>
+
+        <div id="loading">
+
+        </div>
+    </body>
+</html>
