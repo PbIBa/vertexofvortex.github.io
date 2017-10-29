@@ -11,22 +11,44 @@
 
             #loading {
                 background: rgb(255, 196, 0);
-                width: 100px;
-                height: 100px;
-                transition: 1s ease;
-                animation: spin 1s infinite;
-                margin: 100px;
+                width: 50px;
+                height: 50px;
+                transition: 2s ease;
+                animation: float_vertical 2s infinite;
+                float: left;
+                margin-right: 30px;
+                border-radius: 25px;
             }
 
-            @keyframes spin {
-                0% {transform: rotateZ(0deg);}
-                50% {transform: rotateZ(180deg);}
-                100% {transform: rotateZ(360deg);}
+            #loading_container {
+                margin: 200px;
+                color: rgb(255, 196, 0);
+                font-size: 50px;
+                animation: opacity 5s ease;
+                opacity: 0;
+            }
+
+            #content {
+
+            }
+
+            @keyframes opacity {
+                0% {opacity: 1;}
+                90% {opacity: 1;}
+                100% {opacity: 0;}
+            }
+
+            @keyframes float_vertical {
+                0% {transform:translateY(-10px);}
+                50% {transform:translateY(10px);}
+                100% {transform:translateY(-10px);}
             }
         </style>
-
-        <div id="loading">
-
+        <div id="loading_container">
+            Loading... <div id="loading"></div>
+        </div>
+        <div id="content">
+ты пидор
         </div>
     </body>
 </html>
