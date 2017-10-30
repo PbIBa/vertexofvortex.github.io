@@ -14,22 +14,32 @@
                 width: 50px;
                 height: 50px;
                 transition: 2s ease;
-                animation: float_vertical 2s infinite;
-                float: left;
-                margin-right: 30px;
+                animation: float_vertical 2s infinite; 
                 border-radius: 25px;
+                display: inline-block;
             }
 
             #loading_container {
-                margin: 200px;
                 color: rgb(255, 196, 0);
                 font-size: 50px;
                 animation: opacity 5s ease;
                 opacity: 0;
+                background: white;
+                width: 100%;
+                padding: 200px 0 200px 0;
+                position: absolute;
+                top: 0;
             }
 
             #content {
+                width: 100%;
+                padding: 200px 0 200px 0;
+                color: rgb(255, 196, 0);
+                font-size: 50px;
+            }
 
+            #text::after {
+                animation: text 5s ease;
             }
 
             @keyframes opacity {
@@ -43,12 +53,19 @@
                 50% {transform:translateY(10px);}
                 100% {transform:translateY(-10px);}
             }
+
+            @keyframes text {
+                0% {content: " Загрузка параметров...";}
+                20% {content: " 2...";}
+                60% {content: " 3...";}
+            }
         </style>
-        <div id="loading_container">
-            Loading... <div id="loading"></div>
-        </div>
         <div id="content">
-ты пидор
+            <center>ты пидор</center>
+        </div>
+        <div id="loading_container">
+            <center><div id="loading"></div>
+            <span id="text">Загрузка...</span></center>
         </div>
     </body>
 </html>
