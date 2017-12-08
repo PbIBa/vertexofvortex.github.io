@@ -162,7 +162,6 @@ h2 {
 	background-color: rgba(0, 0, 0, 0);
 	margin: 0 10px 0 10px;
 	border: none;
-	outline: none;
 	cursor: pointer;
 }
 
@@ -175,4 +174,10 @@ h2 {
 
 #facebook {
 	background: url(../images/facebook-logo-2.svg);
+}
+
+#vk-group {
+	background: #FFFFFF;
+	width: 600px;
+	border-radius: 25px;
 }
