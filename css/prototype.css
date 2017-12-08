@@ -43,12 +43,45 @@ body {
 	color: white;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 2px solid;
+}
+
+a#black {
+	border-color: rgba(0, 0, 0, 0.5);
+}
+
+a#white {
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+a#black:hover {
+	border-color: rgba(0, 0, 0, 1);
+}
+
+a#white:hover {
+	border-color: rgba(255, 255, 255, 1);
+}
+
+p {
+	margin-top: 15px;
+}
+
 h1 {
 	font-size: 44pt;
 	font-family: 'Gotham Bold';
 	letter-spacing: 5pt;
 	margin: 50px;
 	color: #FFFFFF;
+}
+
+h2 {
+	font-family: 'Gotham Bold';
+	margin-bottom: 15px;
+	letter-spacing: 2pt;
+	font-size: 24pt;
 }
 
 #skills-columns-wrapper {
@@ -111,4 +144,14 @@ h1 {
 
 #about {
 	color: #FFFFFF;
+}
+
+#information {
+	font-size: 16pt;
+	font-family: 'Gotham Regular';
+	color: #FFFFFF;
+	/* background: #FFFFFF; */
+	padding: 0px 400px 0px 400px;
+	border-radius: 25px;
+	text-align: justify;
 }
