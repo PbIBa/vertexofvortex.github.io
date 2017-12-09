@@ -7,7 +7,20 @@
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
-	<center><h1 style="margin: 100px 0 0 0; font-size: 200pt;">404</h1></center>
+	<style>
+		@keyframes appearing {
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
+		}
+		h1 {
+			animation: appearing 2s cubic-bezier(0,.99,1,1);
+		}
+	</style>
+	<center><h1 style="margin: 100px 0 0 0; font-size: 200pt; letter-spacing: 1pt;">404</h1></center>
 	<center><h1 style="margin: 0 0 0 0">ТУТ НИЧЕГО НЕТ, ПАЦАНЫ</h1></center>
 	<center><h1 style="margin: 20px 0 0 0; font-size: 20pt;">страница не найдена</h1></center>
 </body>
