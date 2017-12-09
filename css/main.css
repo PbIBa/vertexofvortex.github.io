@@ -42,10 +42,12 @@ button {
 	transform: skewY(0deg);
 	transition: 3s;
 	margin-bottom: 50px;
+	transform: translate(0, 0) scale(0.0);
+	transition: 0.1s;
 }
 
 .logo:hover {
-	transform: skewY(-3deg) scale(1.1);
+	transform: skewY(-3deg) scale(1.01);
 	transition: 0.5s;
 }
 

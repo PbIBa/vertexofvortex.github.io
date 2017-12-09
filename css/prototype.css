@@ -100,6 +100,13 @@ h2 {
 	padding: 4%;
 	font-family: 'Gotham Medium';
 	font-size: 2vw;
+	transform: translate(0, 0) scale(1.00);
+	transition: 0.5s cubic-bezier(0,.99,1,1);
+}
+
+.skills-column:hover {
+	transform: translate(0, -10px) scale(1.02);
+	transition: 0.5s cubic-bezier(0,.99,1,1);
 }
 
 #skills-bar-columns-wrapper {
@@ -123,12 +130,12 @@ h2 {
 }
 
 #skills-bar-column-web {
-	background: #D2D2D2;
+	background: #FAFAFA;
 	width: 15%;
 }
 
 #skills-bar-column-video {
-	background: #B4B4B4;
+	background: #F0F0F0;
 	width: 10%;
 	border-radius: 0 25px 25px 0;
 }
@@ -162,6 +169,13 @@ h2 {
 	margin: 0 10px 0 10px;
 	border: none;
 	cursor: pointer;
+	transform: translate(0, 0) scale(1.0);
+	transition: 0.5s cubic-bezier(0,.99,1,1);
+}
+
+.social:active {
+	transform: translate(0, 2px) scale(0.99);
+	transition: 0.0s cubic-bezier(0,.99,1,1);
 }
 
 #vk {
@@ -184,17 +198,19 @@ h2 {
 
 #footer {
 	width: 100%;
-	height: 100px;
-	margin-top: 60px;
-	padding: 30px;
+	margin-top: 30px;
+	padding: 30px 30px 0 30px;
 }
 
 #copyright {
-	font-family: 'Gotham Narrow Medium';
+	font-family: 'Gotham Regular';
 	font-size: 14pt;
 	background-color: #FFFFFF;
-	border-radius: 25px;
-	padding: 30px 60px 30px 60px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	padding: 10px 60px 10px 60px;
 }
 
 
