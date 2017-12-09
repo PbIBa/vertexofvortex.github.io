@@ -165,9 +165,6 @@ h2 {
 	cursor: pointer;
 }
 
-.social:hover {
-}
-
 #vk {
 	background: url(../images/vk-logo.svg);
 }
@@ -178,6 +175,10 @@ h2 {
 
 #vk-group {
 	background: #FFFFFF;
-	width: 600px;
+	min-width: 400px;
 	border-radius: 25px;
+	font-family: 'Gotham Regular';
+	font-size: 12pt;
+	display: inline-block;
+	vertical-align: top;
 }
