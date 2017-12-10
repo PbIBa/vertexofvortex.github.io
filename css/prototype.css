@@ -28,6 +28,7 @@
 body {
 	background: #000000;
 	margin: 0px;
+	-webkit-font-smoothing: antialised;
 }
 
 #logo-wrapper {
