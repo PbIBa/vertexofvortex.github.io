@@ -3,82 +3,62 @@
 <head>
 	<meta charset="utf-8">
 	<title>vertexofvortex</title>
-	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-	<meta name="yandex-verification" content="c293701c3ccea754" />
-	<!--<script type="text/javascript" src="js/jquery.js"></script>-->
 </head>
 <body>
-	<table>
-		<tr>
-			<td id="firstpage">
-				<center><img src="images/logo_white.svg" class="logo"></center>
-				<center><a href="#activity"><button id="arrowdown"><img src="images/down_arrow.svg" class="arrowdown"></button></a></center>
-			</td>
-		</tr>
-	</table>
-	<a name="activity"><div class="block" id="activity"></a>
-		<center>
-		  <h2 style="color: white">Чем я занимаюсь?</h2>
-		</center>
-		<table id="activitytable">
+	<section id="logo-wrapper">
+		<center><img src="images/logo_white.svg" id="logo"></center>
+	</section>
+	<section id="skills">
+		<center><h1>МОИ СКИЛЛЫ</h1></center>
+		<table id="skills-columns-wrapper">
 			<tr>
-				<td id="card" style="width:33%;">
-					<img src="images/layout.svg" id="incard">
-					<h1 align="center" style="margin-bottom: 15px;">Вёрсткой веб-сайтов</h1>
+				<td class="skills-column" id="skills-column-design">
+					<center><img src="images/graphic-design.svg" id="skills-column-image"></center>
+					<center>Графический дизайн</center>
 				</td>
-				<td id="card" style="width:33%;">
-					<img src="images/graphic_design.svg" id="incard">
-					<h1 align="center" style="margin-bottom: 15px;">Графическим дизайном</h1>
+				<td class="skills-column" id="skills-column-web">
+					<center><img src="images/web-dev.svg" id="skills-column-image"></center>
+					<center>Веб-разработка</center>
 				</td>
-				<td id="card" style="width:33%;">
-					<img src="images/video_editing.svg" id="incard">
-					<h1 align="center" style="margin-bottom: 15px;">Монтажом видео</h1>
+				<td class="skills-column" id="skills-column-video">
+					<center><img src="images/video-montage.svg" id="skills-column-image"></center>
+					<center>Видеомонтаж</center>
 				</td>
 			</tr>
 		</table>
-	</div>
-	<div class="block" id="about">
-		<span class="text" id="block">
-			<h1>Обо мне. Кто я такой?</h1>
-			Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Повседневная практика показывает, что реализация намеченных плановых заданий требуют от нас анализа новых предложений. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития. Разнообразный и богатый опыт реализация намеченных плановых заданий требуют определения и уточнения новых предложений. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что консультация с широким активом позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание дальнейших направлений развития. Повседневная практика показывает, что консультация с широким активом в значительной степени обуславливает создание соответствующий условий активизации. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет оценить значение систем массового участия.
-		</span>
-	</div>
-	<div class="block" id="projects">
-		<span class="text" id="block" style="color: white">
-			<h1>Блог. Мои работы.</h1>
-			Блога на этом сайте пока что не будет. Все мои работы вы можете посмотреть и оценить в моей группе ВКонтакте, комментарии там открыты, я всегда готов прислушаться к вашей критике. Там же вы можете поддержать меня финансово.
-			<p></p>
-		</span>
-		<a href="https://vk.com/vertexofvortexdesign"><button id="default">Группа ВКонтакте</button></a> <!--<button id="default">Я в Twitter</button><button id="default">Я на Facebook</button>-->
-	</div>
-	<div class="block" id="contacts">
-		<span class="text" id="block" style="color: black">
-			<h1>Связь со мной. Социальные сети и другие ресурсы.</h1>
-			Ниже приведены ссылки на большинство социальных сетей или ресурсов, где можно меня найти.
-			<p></p>
-		</span>
-		<a href="https://vk.com/vertexofvortex"><button id="default2">Моя страница в ВКонтакте</button></a>
-		<a href="https://www.facebook.com/vertexofvortex"><button id="default2">Моя страница в Facebook</button></a>
-		<a href="https://twitter.com/vertexofvortex"><button id="default2">Я в Twitter</button></a>
-		<a href="https://www.instagram.com/vertexofvortex/"><button id="default2">Посмотреть мои фото в Instagram</button></a>
-		<a href="https://www.youtube.com/channel/UCqu9S1ABf0KXsWbTErGqh1g"><button id="default2">Мой YouTube-канал</button></a>
-		<a href="https://www.behance.net/vertexofvortex"><button id="default2">Мои проекты на Behance</button></a>
-		<a href="https://dribbble.com/vertexofvortex"><button id="default2">Я на Dribbble</button></a>
-		<a href="https://pinterest.com/vertexofvortex/"><button id="default2">Мой профиль в Pinterest</button></a>
-		<a href="https://plus.google.com/103498542568336767221"><button id="default2">Я в Google+</button></a>
-		<a href="https://www.artstation.com/vertexofvortex"><button id="default2">Я на ArtStation</button></a>
-		<a href="http://steamcommunity.com/id/vertexofvortex/home"><button id="default2">Мой профиль в Steam</button></a>
-	</div>
-	<footer>
-		<table class="footer">
+		<table id="skills-bar-columns-wrapper">
 			<tr>
-				<td class="footer">
-					© 2017 VERTEXOFVORTEX DESIGN
-					<p></p>Все права защищены.
+				<td class="skills-bar-column" id="skills-bar-column-design">
+					<center><span id="skills-bar-column-percent">75%</span><br>графический дизайн — основной вид деятельности</center>
 				</td>
-			<tr>
+				<td class="skills-bar-column" id="skills-bar-column-web">
+					<center><span id="skills-bar-column-percent">15%</span><br>веб-разработка</center>
+				</td>
+				<td class="skills-bar-column" id="skills-bar-column-video">
+					<center><span id="skills-bar-column-percent">10%</span><br>видеомонтаж</center>
+				</td>
+			</tr>
 		</table>
-	</footer>
+	</section>
+	<section id="about">
+		<center><h1>ОБО МНЕ</h1></center>
+		<div id="information">
+			<h2>КТО ЖЕ Я ТАКОЙ?</h2>
+			Меня зовут Николай, проживаю я в Краснодаре, родился в марте 2002 года. С ранних лет мне было интересно строить и созедать что-то, именно поэтому я нашёл себя в графическом дизайне и вёрстке. В то время, как другие подростки курят за гаражами, я занимаюсь веб-разработкой и даже зарабатываю небольшие деньги своей деятельностью, но мама мной почему-то не гордится...
+			<h2>ЧЕМ Я ЗАНИМАЮСЬ?</h2>
+			Сфера моих интересов довольно обширна: помимо того, что я увлекаюсь дизайном и созданием сайтов, мне также интересны и фотосъёмка, и видеомонтаж, и программирование, и архитектура, и многое-многое другое. Я человек достаточно разнообразный, но до ужаса ленивый.
+		</div>
+	</section>
+	<section id="contact">
+		<center><h1>СВЯЗЬ СО МНОЙ</h1></center>
+		<center><a href="https://vk.com/id243225448" target="_blank"><button id="vk" class="social"></button></a><a href="https://facebook.com/vertexofvortex"  target="_blank"><button id="facebook" class="social"></button></a><a href="https://instagram.com/vertexofvortex"  target="_blank"><button id="instagram" class="social"></button></a><a href="https://vk.com/vertexofvortexdesign" target="_blank"><button id="vk-group" class="social">Подпишись на мой блог ВКонтакте</button></a></center>
+	</section>
+	<table id="footer">
+		<td id="copyright">
+			<center>© «vertexofvortex.design», 2017</center>
+		</td>
+	</table>
 </body>
 </html>
