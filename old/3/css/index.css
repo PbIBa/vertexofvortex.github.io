@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Roboto Slab Regular';
+	src: url(../../../fonts/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto Slab Bold';
+	src: url(../../../fonts/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto Slab Light';
+	src: url(../../../fonts/RobotoSlab-Light.ttf);
+}
+
+@font-face {
+	font-family: 'Roboto Regular';
+	src: url(../../../fonts/Roboto-Regular.ttf)
+}
+
+html {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	background: black;
+}
+
+button {
+	outline: none;
+	cursor: pointer;
+}
+
+.logo {
+	width: 50%;
+	height: auto;
+	padding-top: 100px;
+	transform: skewY(0deg);
+	transition: 3s;
+	margin-bottom: 50px;
+	transform: translate(0, 0) scale(0.0);
+	transition: 0.1s;
+}
+
+.logo:hover {
+	transform: skewY(-3deg) scale(1.01);
+	transition: 0.5s;
+}
+
+.block {
+	max-width: 100%;
+	padding: 50px;
+	text-align: justify;
+}
+
+/*.block#image {
+	margin: 0px;
+	max-width: 100%;
+	padding: 0px;
+	max-height: 500px;
+}*/
+
+.block#about {
+	background: white;
+}
+
+.block#projects {
+	
+}
+
+.block#contacts {
+	background: white;
+}
+
+.block#activity {
+	padding: 0px;
+}
+
+td#card {
+	background: white;
+	font-family: 'Roboto Slab Regular';
+	/* font-size: 14pt; - ломает вёрстку */
+	padding: 30px;
+	vertical-align: top;
+	margin: 0px;
+	transition: 0.5s ease;
+}
+
+td#card:hover {
+	transform: translateY(-25px) scale(1.05);
+	transition: 1s ease;
+}
+
+#activitytable {
+	border-spacing: 50px;
+	width: 100%;
+	margin: 0px;
+}
+
+.text#block {
+	font-family: 'Roboto Slab Regular';
+	font-size: 14pt;
+	margin-bottom: 100px;
+}
+
+button#default {
+	height: 45px;
+	background: none;
+	border: 2px solid white;
+	font-family: 'Roboto Regular';
+	font-size: 13pt;
+	transition: 0.5s;
+	margin-top: 10px;
+	color: white;
+	margin-right: 30px;
+	padding: 0px 10px 0px 10px;
+}
+
+button#default:hover {
+	transform: translateX(10px);
+	cursor: pointer;
+	background: white;
+	color: black;
+}
+
+button#default:active {
+	border: 2px solid black;
+	outline: 2px solid white;
+}
+
+button#default2 {
+	height: 45px;
+	background: none;
+	border: 2px solid black;
+	font-family: 'Roboto Regular';
+	font-size: 13pt;
+	transition: 0.5s;
+	margin-top: 10px;
+	color: black;
+	margin-right: 30px;
+	padding: 0px 10px 0px 10px;
+}
+
+button#default2:hover {
+	cursor: pointer;
+	background: black;
+	color: white;
+	transform: translateX(10px);
+}
+	
+button#arrowdown {
+	background: none;
+	border: none;
+	transition: 2s;
+}
+
+button#arrowdown:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+button#default2:active {
+	border: 2px solid white;
+	outline: 2px solid black;
+}
+
+h1, h2 {
+	margin-top: 0px;
+	font-family: 'Roboto Slab Bold';
+}
+
+h1 {
+	font-size: auto;
+}
+
+h2 {
+	margin-top: 0px;
+	font-size: 40pt;
+	margin-bottom: 0px;
+}
+
+table {
+	width: 100%;
+}
+
+td#firstpage {
+	height: 1000px;
+}
+
+.arrowdown {
+	width: 100px;
+	height: 100px;
+	transition: 2s;
+	animation: float_ver 5s infinite ease;
+	animation-delay: 1s;
+}
+
+.arrowdown:hover {
+	opacity: 50%;
+}
+
+img#incard {
+	margin-bottom: 15px;
+}
+
+td.buttons {
+	align-content: center;
+}
+
+table.buttons {
+	
+}
+
+footer {
+	height: 100px;
+	color: white;
+	font-family: 'Roboto';
+	font-size: 16pt;
+	line-height: 1pt;
+}
+
+table.footer {
+	height: 100%;
+	padding-left: 50px;
+}
+
+td.footer {
+	height: 100%;
+	/*animation: float_hor 5s infinite ease;*/
+}
+
+@keyframes float_ver {
+	0% {transform: translate(0,0);}
+	50% {transform: translate(0,50px);}
+	100% {transform: translate(0,0);}
+}
+
+@keyframes float_hor {
+	0% {transform: translate(25px);}
+	50% {transform: translate(-25px);}
+	100% {transform: translate(25px);}
+}
+
+
+@media screen and (max-width: 1050px) {
+	.block {
+		text-align: left;
+	}
+	
+	table#activitytable {
+		max-width: 1050px;
+	}
+}

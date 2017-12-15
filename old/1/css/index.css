@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Uni';
+	src: url(../fonts/uni.ttf);
+}
+
+body {
+	background-color: #151515;
+	margin-top: 250px;
+}
+
+.nick {
+	text-align: center;
+	font-family: Uni, 'Uni', normal;
+	color: white;
+	text-shadow: white 0px 0px 20px;
+	font-size: 40pt;
+	vertical-align: middle;
+}
+
+.line {
+	border-top: 5px solid white;
+	text-shadow: white 0px 0px 15px;
+	margin-left: 300px;
+	margin-right: 300px;
+	box-shadow: 0 0 20px 0px white;
+	margin-bottom: 30px;
+}
+
+#buttons {
+	margin-top: 25px;
+}
+
+button {
+	margin: 10pt;
+	background: #FFFFFF;
+	padding-bottom: 3px;
+	width: 150px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	box-shadow: 0px 0px 15px 0px white;
+	border: none;
+	transition: box-shadow 0.5s 0s ease;
+}
+
+button:hover {
+	box-shadow: 5px 0px 30px 10px black;
+	cursor: pointer;
+}
+
+button:active {
+	box-shadow: 5px 0px 20px 5px black;
+	cursor: wait;
+}
+
+#button_text {
+	font-family: Uni, 'Uni', normal;
+	color: #151515;
+	text-decoration: none;
+	font-size: 14pt
+}
+
+.aka {
+	text-align: center;
+	font-family: Uni, 'Uni', normal;
+	color: white;
+	text-shadow: white 0px 0px 20px;
+	font-size: 12pt;
+	margin-bottom: 10px;
+}
+
+#copyright {
+	
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	height: 0px;
+	bottom: 100px;
+}
