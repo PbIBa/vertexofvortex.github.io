@@ -41,6 +41,10 @@ img {
 
 #logo-wrapper {
 	padding: 150px 0 150px 0;
+	transition: 0.5s cubic-bezier(0,.99,1,1);
+}
+#logo-wrapper:hover {
+	transform: skewY(-2deg);
 }
 
 #logo {
