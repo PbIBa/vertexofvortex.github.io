@@ -31,6 +31,14 @@ body {
 	-webkit-font-smoothing: antialised;
 }
 
+img {
+	pointer-events: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
 #logo-wrapper {
 	padding: 150px 0 150px 0;
 }
