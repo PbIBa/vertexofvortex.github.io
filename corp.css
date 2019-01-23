@@ -1,0 +1,424 @@
+/* ВНЕШНИЙ ВИД ФОРУМА */
+body {
+    background-color: #171717;
+    background-image: none;
+    color: #f1f1f1;
+}
+
+.main-head {
+    background: hsl(117, 45%, 47%);
+    border: 1px solid #47ae42;
+    color: #FFFFFF;
+}
+
+#brd-announcement {
+    color: #f1f1f1;
+    background: #2b2b2b;
+    border: 1px solid #363636;
+}
+
+#brd-navlinks li.isactive {
+    background: hsla(117, 45%, 42%, 1);
+}
+
+#brd-navlinks {
+       background: #47ae42;
+}
+
+#brd-navlinks li:hover {
+    background: hsla(117, 45%, 42%, 1);
+}
+
+#brd-navlinks a {
+    color: #f1f1f1;
+}
+
+.main-subhead {
+    background: url(http://vertexofvortex.github.io/files/minecorpdark-style/img/main-head-bg.png) repeat-x;
+    /* background: #363636; */
+    border-left: solid 1px #363636;
+    border-right: solid 1px #363636;
+}
+
+.main-category {
+    border: 1px solid #47ae42;
+    background: #2b2b2b;
+}
+
+a:link, a:visited, .js_link {
+    color: #47ae42;
+}
+
+.main-item, .main-item li, .main-item div, td {
+        border-color: #363636;
+}
+
+li.info-posts strong {
+    color: #f1f1f1;
+}
+
+li.info-topics strong {
+    color: #f1f1f1;
+}
+
+.main-extensions, #brd-stats, #brd-online, #brd-qpost {
+    background: #2b2b2b;
+    border: 1px solid #363636
+}
+
+div#brd-stats.gen-content {
+    border-bottom: none;
+}
+
+li.st-activity span strong {
+    color: #f1f1f1;
+}
+
+li.st-users span strong {
+    color: #f1f1f1;
+}
+
+.main-forum {
+    background: #2b2b2b;
+}
+
+.main-content .sticky.closed {
+    background: #2e2e2e;
+}
+
+.main-content .closed {
+    background: #262626;
+}
+
+.main-content .sticky {
+    background: #2e2e2e;
+}
+
+span.item-status em.sticky {
+    background: none;
+}
+
+span.item-status em.closed {
+    background: none;
+}
+
+.main-content .main-item .hn .item-status em.sticky, .main-content .main-item .hn .item-status em.closed {
+    color: #48ad42
+}
+
+li.info-replies strong {
+    color: #f1f1f1;
+}
+
+li.info-views strong {
+    color: #f1f1f1;
+}
+
+th {
+    background: #343434;
+}
+
+.ct-group table {
+    border-color: #3e3e3e;
+}
+
+.ct-group table th {
+    border-color: #3e3e3e;
+}
+
+.main-frm .ct-group td {
+    background: #2a2a2a;
+}
+
+.ct-group table tr.even td {
+    background: #2e2e2e;
+}
+
+div#rules-content.ct-box.user-box {
+    background: #f1f1f1;
+    border: none;
+}
+
+/* ########## ИКОНКИ ########## */
+
+.main-content .redirect .icon {
+    background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/status.png) -48px 0px no-repeat!important;
+}
+
+.main-content .new .icon {
+    background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/status.png) -192px 0px no-repeat!important;
+}
+
+.main-content .sticky.closed .icon {
+background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/status.png) -144px 0px no-repeat!important;
+}
+
+.main-content .sticky .icon {
+background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/status.png) -96px 0px no-repeat!important;
+}
+
+.main-content .icon {
+background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/status.png) 0px 0px no-repeat!important;
+}
+
+.main-content .closed .icon {
+background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/status.png) -240px 0px no-repeat!important;
+}
+
+.main-content .main-item .icon {
+background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/status.png) 0px 0px no-repeat;
+}
+
+/* ############################ */
+
+ #brd-online .hn, #brd-online p:after {
+    content: " — вы используете стиль MineCorp Dark";
+}
+
+.entry-content a:visited {
+    color: hsla(116, 27%, 40%, 1);
+}
+
+/* ВНУТРЕННОСТИ ТЕМЫ */
+.post {
+    background: #313131;
+       border-top-color: #3F3F3F;
+      border-bottom-color: #2B2B2B;
+    border-color: #313131;
+}
+  
+div.postfoot {
+    border-top-style: none;
+}
+
+div.post.even.replypost {
+    border-bottom-color: #3F3F3F;
+}
+
+.firstpost {
+    border-bottom-color: #3F3F3F;                                     
+}
+
+.posthead, .postbody, .post-options {
+    background: #2b2b2b;
+    border-color: #363636;
+}
+
+.posthead .hn {
+    background: #313131;
+    border-color: #363636;
+}
+
+.gen-content, .main-content {
+    border-color: #363636;
+}
+
+.post div, h3.post-ident, h4.post-title, .posthead h3, .userstatus span, .sig-line {
+    border-color: #363636;
+}
+
+.brd .entry-content .quotebox {
+    background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/quote.png) top right no-repeat;
+    background-color: #3E3E3E;
+    outline: #363636;
+    color: #f1f1f1;
+    border: solid #484848 1px;
+}
+
+.brd .postfoot .post-actions .edit-post a {
+    background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/actions.png) 0px -144px no-repeat;
+}
+
+.brd .postfoot .post-actions .report-post a {
+    background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/actions.png) 0px 0px no-repeat;
+}
+
+.post-num {
+    color: #47ae42;
+}
+
+.fancy_spoiler_switcher {
+    background: default;
+    background-color: #363636;
+    border: none!important;
+}
+
+.fancy_spoiler {
+    color: #f1f1f1;
+    border-top: dashed 1px #4B4B4B!important;
+}
+
+.fancy_spoiler_switcher_header {
+    color: #48ad42;
+}
+
+.brd .postfoot .post-actions span {
+    background: #363636;
+    border: none;
+}
+
+ul.author-info li span strong {
+    color: #48ad42;
+}
+
+a.newpost, a.newpost:link, a.newpost:visited {
+    background: #48ad42;
+    border: #48ad42;
+}
+
+a.newpost:focus, a.newpost:active, a.newpost:hover {
+    background: #308c26;
+    border: #308c26;
+}
+
+.paging a, .paging strong {
+    background: #2b2b2b;
+    border: #2b2b2b;
+}
+
+.paging span.pages {
+    color: #f1f1f1;
+}
+
+.main-foot {
+    background: #2b2b2b;
+    border-color: #363636;
+    color: #f1f1f1;
+    border-top: none;
+}
+
+textarea#fld1 {
+    background: #3E3E3E;
+    border-color: #3E3E3E;
+}
+
+#pun_bbcode_bar input.image {
+    border-color: #3E3E3E;
+}
+
+.required label span {
+    color: #f1f1f1;
+}
+
+/* input[name="submit_button"], input[name="pm_send"] {
+    background: #48ad42;
+    border-color: #48ad42;
+}
+
+ input[name="submit_button"], input[name="pm_send"]:hover {
+    background: #308c26;
+    border: #308c26;
+} */
+
+input, textarea, select, button {
+    color: #f1f1f1;
+}
+
+.frm-buttons, .extension .options, .hotfix .options {
+    border-top-color: #3E3E3E;
+}
+
+.ct-box, .ct-set, .ct-group, .frm-group {
+    background: #2b2b2b;
+}
+
+.main-frm {
+    background: #2b2b2b;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="number"], input[type="search"], textarea {
+    background: #363636;
+    border: none;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="number"]:focus, input[type="search"]:focus, textarea:focus {
+    background: #363636;
+}
+
+label, .aslabel, .mf-set legend, .ct-legend, .ct-legend span, .ct-legend cite, .ct-legend strong {
+    color: #f1f1f1;
+}
+
+.ct-box, .ct-set, .ct-group, .frm-group {
+    border-color: #363636;
+}
+
+.brd .entry-content .codebox {
+    background: url(https://vertexofvortex.github.io/files/minecorpdark-style/img/code.png) bottom right no-repeat;
+    background-color: #3E3E3E;
+    outline: #363636;
+    color: #f1f1f1;
+    border-left: 15px solid #484848;
+    border-top: solid #484848 1px;
+    border-right: solid #484848 1px;
+    border-bottom: solid #484848 1px;
+}
+
+.pun_poll_item.unvotted {
+    background: #212121;
+    border: 1px solid #3e3e3e!important;
+}
+
+.ct-box, .ct-set, .ct-group, .frm-group {
+    background: #212121;
+}
+
+.main-frm {
+    background: #212121;
+}
+
+.pun_poll_header {
+    color: #48ad42;
+}
+
+
+/* ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ */
+ul.data-list li, ul.data-box li {
+    border-bottom: solid 1px #363636;
+    border-top: solid 1px #363636;
+}
+
+.main-menu .active a, .admin-menu .active a {
+    border-top: solid 2px #48ad42;
+}
+
+input, textarea, select, button {
+    background: #363636;
+    border: 1px solid #363636;
+}
+
+ .ct-box.error-box {
+    background: #363636;
+}
+
+li.warn span {
+    color: #f1f1f1;
+}
+
+h2.warn.hn strong {
+    color: #48ad42;
+}
+
+h2.warn.hn {
+    color: #f1f1f1;
+}
+
+h3.ct-legend.hn {
+    color: #f1f1f1;
+}
+
+.main-content .info-box {
+    background: #363636;
+}
+
+ul.info-list span {
+    color: #f1f1f1;
+}
+
+ul.data-list li span strong {
+    color: #f1f1f1;
+}
+
+ul.data-box li span strong {
+    color: #f1f1f1;
+}
