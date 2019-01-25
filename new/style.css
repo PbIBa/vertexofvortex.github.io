@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+body {
+    margin: 0px;
+}
+
+.coverImage {
+    padding: 100px 0px 100px 0px;
+    background: url(images/coverImage.jpg) no-repeat;
+    color: #FFFFFF;
+    font-size: 42pt;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+.logo {
+    height: 75px;
+}
+
+.description {
+    padding: 10px 15% 10px 15%;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'Monserrat', sans-serif;
+    text-align: justify;
+}
+
+.blocksWrapper {
+    padding: 10px 15% 10px 15%;
+}
+
+.blocksContainer {
+    display: inline-block;
+    width: 100%;
+}
+
+.block {
+    display: block;
+    float: left;
+    padding: 10px;
+    width: 25%;
+    height: 350px;
+    background: black;
+}
