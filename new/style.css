@@ -4,41 +4,70 @@ body {
     margin: 0px;
 }
 
+.pageSection {
+    background: #20262E;
+    padding: 0 15% 0 15%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Lato Black', sans-serif;
+    font-size: 42px;
+    margin-bottom: 36px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
 .coverImage {
     padding: 100px 0px 100px 0px;
     background: url(images/coverImage.jpg) no-repeat;
-    color: #FFFFFF;
-    font-size: 42pt;
-    font-family: 'Lato', sans-serif;
     text-align: center;
+    background-attachment: fixed;
 }
 
 .logo {
-    height: 75px;
+    height: 100px;
 }
 
 .description {
-    padding: 10px 15% 10px 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 36px;
     font-family: 'Monserrat', sans-serif;
     text-align: justify;
+    color: #FFFFFF;
 }
 
 .blocksWrapper {
-    padding: 10px 15% 10px 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .blocksContainer {
-    display: inline-block;
     width: 100%;
+    border-spacing: 10px;
 }
 
 .block {
-    display: block;
-    float: left;
-    padding: 10px;
+    padding: 40px 20px;
     width: 25%;
-    height: 350px;
-    background: black;
+    text-align: center;
+    vertical-align: top;
+    background: #2C3540;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: solid rgb(28, 33, 41) 3px;
+}
+
+.blockIcon {
+    width: 50%;
+}
+
+.blockText {
+    font-size: 24px;
+    line-height: 22px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
 }
