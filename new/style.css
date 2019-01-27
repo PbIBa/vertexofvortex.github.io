@@ -6,7 +6,7 @@ body {
 
 .pageSection {
     background: #20262E;
-    padding: 0 15% 0 15%;
+    padding: 25px 15% 0 15%;
 }
 
 h1 {
@@ -14,6 +14,7 @@ h1 {
     font-family: 'Lato Black', sans-serif;
     font-size: 42px;
     margin-bottom: 36px;
+    margin-top: 0;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
@@ -30,18 +31,11 @@ h1 {
 }
 
 .description {
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 18px;
     line-height: 36px;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     color: #FFFFFF;
-}
-
-.blocksWrapper {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .blocksContainer {
@@ -72,3 +66,33 @@ h1 {
     color: #FFFFFF;
 }
 
+.block.project {
+    padding: 0 0 40px 0;
+}
+
+.blockImage.projects {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+}
+
+.blockImage.projects.mcd {
+    background: url(images/darktheme.jpg);
+}
+
+.blockImage.projects.grp {
+    background: rgb(35, 219, 96);
+}
+
+.blockImage.projects.nnn {
+    background: rgb(35, 47, 219);
+}
+
+.blockTextDescription {
+    margin: 0 20px 0 20px;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: #FFFFFF;
+}
