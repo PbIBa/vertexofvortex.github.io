@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
 
+html {
+    height: 100%;
+}
 body {
     margin: 0px;
+    height: 100%;
 }
 
 .pageSection {
     background: #20262E;
-    padding: 25px 15% 0 15%;
+    padding: 50px 15% 0 15%;
 }
 
 h1 {
@@ -17,6 +21,16 @@ h1 {
     margin-top: 0;
     letter-spacing: 4px;
     text-transform: uppercase;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+a:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.75);
 }
 
 .coverImage {
@@ -77,11 +91,13 @@ h1 {
 }
 
 .blockImage.projects.mcd {
-    background: url(images/darktheme.jpg);
+    background: url(images/darktheme.png);
+    background-position: center;
 }
 
 .blockImage.projects.grp {
     background: rgb(35, 219, 96);
+    background: url(images/vkgroup.png);
 }
 
 .blockImage.projects.nnn {
@@ -91,8 +107,28 @@ h1 {
 .blockTextDescription {
     margin: 0 20px 0 20px;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 24px;
     font-family: 'Montserrat', sans-serif;
     text-align: justify;
     color: #FFFFFF;
+}
+
+p.blockTextDescription {
+    
+}
+
+.blockButton {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+
+.blockButton.light {
+    background: #FFFFFF;
+    color: #20262E;
+}
+
+.blockButton.dark {
+    
 }
