@@ -210,7 +210,7 @@ p {
     grid-template-columns: repeat(4, 1fr);
 }
 
-@media only screen and (max-width: 1450px) {
+@media (max-width: 1450px) {
     .pageSection {
         margin: 0 5% 40px 5%;
     }
@@ -220,7 +220,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 1330px) {
+@media (max-width: 1330px) {
     .pageSection {
         margin: 0 40px 40px 40px;
     }
@@ -229,7 +229,7 @@ p {
         margin: 0;
     }
 
-@media only screen and (max-width: 1100px) {
+@media (max-width: 1100px) {
     .pageSection.menu {
         display: none;
     }
