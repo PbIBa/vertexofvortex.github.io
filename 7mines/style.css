@@ -113,7 +113,8 @@ p {
 }
 
 .formButton {
-    width: 60%;
+    width: unset;
+    padding: 0 20px 0 20px;
     height: 50px;
     border: 0;
     border-radius: 50px;
@@ -205,4 +206,49 @@ p {
 .gridFooter {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width: 1450px) {
+    .pageSection {
+        margin: 0 5% 40px 5%;
+    }
+
+    .footer {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .pageSection {
+        margin: 0 40px 40px 40px;
+    }
+
+    .footer {
+        margin: 0;
+    }
+
+@media only screen and (max-width: 1330px) {
+    .pageSection.menu {
+        display: none;
+    }
+
+    .mainBlock {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .contactCard p {
+        display: none;
+    }
+    
+    .contactCard {
+        height: 8vh;
+        vertical-align: middle;
+
+    }
+
+    .footer {
+        display: none;
+    }
 }
