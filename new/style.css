@@ -4,7 +4,7 @@ html {
     height: 100%;
 }
 body {
-    margin: 0px;
+    margin: 0px; 
     height: 100%;
 }
 
@@ -55,6 +55,7 @@ a:hover {
 .blocksContainer {
     width: 100%;
     border-spacing: 10px;
+    animation: appear;
 }
 
 .block {
@@ -131,4 +132,57 @@ p.blockTextDescription {
 
 .blockButton.dark {
     
+}
+
+.socials {
+    padding-bottom: 36px;
+}
+
+.buttonSocial {
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin: 0 10px 0 10px;
+
+    transform: translate(0, 0) scale(1.00);
+	transition: 0.5s cubic-bezier(0,.99,1,1);
+}
+
+.buttonSocial:hover {
+    transform: translate(0, -10px) scale(1.02);
+	transition: 0.5s cubic-bezier(0,.99,1,1);
+}
+
+.buttonSocial.vk {
+    background: url(images/logoVk.svg);
+}
+
+.buttonSocial.fb {
+    background: url(images/logoFacebook.svg);
+}
+
+.buttonSocial.inst {
+    background: url(images/logoInstagram.svg);
+}
+
+.buttonSocial.blog {
+    width: auto!important;
+    vertical-align: top;
+    border-radius: 50px;
+    padding: 0 75px 0 75px;
+
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+@keyframes appear {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }

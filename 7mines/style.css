@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+
+body {
+    margin: 0;
+    background: url(images/background.jpg);
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+p {
+    margin: 0 0 32px 0;
+}
+
+.pageSection {
+    margin: 0 15% 40px 15%;
+}
+
+.pageSection.menu {
+    margin: 0 0 40px 0;
+}
+
+.buttonContainer {
+    width: 100%;
+    min-height: 50px;
+    background: white;
+    text-align: right;
+    display: table;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.logo {
+    float: left;
+    display: table-cell;
+    background: none;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 40px;
+}
+
+.menuButton {
+    display: table-cell;
+    height: 50px;
+    min-width: 170px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mainBlock {
+    width: 100%;
+    min-height: 500px;
+    background: #f4f4f4;
+    border-radius: 15px;
+    padding: 0;
+    /* background-image: url(images/background2.png); */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+.mainBlockColumnContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0;
+    height: 100%;
+}
+
+.mainBlockColumn {
+    background: none;
+    padding: 40px;
+    text-align: justify;
+    line-height: 20pt;
+}
+
+.nickInputWrapper {
+    padding: 0 40px 20px 0;
+}
+
+.inputNickname {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.inputNickname::placeholder {
+    color: gray;
+    font-weight: normal;
+}
+
+.formButtonWrapper {
+    padding-right: 40px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.formButton {
+    width: 60%;
+    height: 50px;
+    border: 0;
+    border-radius: 50px;
+    background: rgb(42,212,29);
+    background: linear-gradient(194deg, rgba(42,212,29,1) 24%, rgba(28,214,175,1) 100%); 
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.1s cubic-bezier(0,.99, 1, 1);
+}
+
+.formButton:hover {
+    transform: scale(1.03);
+}
+
+.formButton:active {
+    transform: scale(1);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.serverIpWrapper {
+    padding: 0 40px 20px 0;
+}
+
+.serverIp {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    height: 22px;
+    resize: none;
+}
+
+.contactCard {
+    background: white;
+    border-radius: 15px;
+    height: 120px;
+    padding: 40px;
+    font-size: 22px;
+    background-image: url(images/img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: bottom;
+    background-size: contain;
+	transition: 0.1s cubic-bezier(0,.99, 1, 1);
+}
+
+.contactCard:hover {
+    transform: translateY(-1%) scale(1.01);
+}
+
+.contactCard:active {
+    transform: scale(1);
+}
+
+.contactCard.cardEmpty {
+    background: none;
+    border: 5px rgba(255, 255, 255, 0.5) dashed;
+    transform: none;
+}
+.contactCard.rules {background-color: #f5dfb1; background-image: url(images/rules.png);}
+.contactCard.vkgroup {background-color: #81a5d4; background-image: url(images/vkgroup.png);}
+.contactCard.vkconf {background-color: #81a5d4; background-image: url(images/vkgroup.png);}
+.contactCard.discord {background-color: #9fafeb; background-image: url(images/discord.png);}
+.contactCard.worldmap {background-color: #5cbd6f; background-image: url(images/worldmap.png);}
+.contactCard.cmds {background-color: #60d6d6; background-image: url(images/cmds.png);}
+.contactCard.playertop {background-color: #e0cd6c; background-image: url(images/top.png);}
+
+
+.contactCard p {
+    font-size: 16px;
+}
+
+.footer {
+    background: black;
+    margin: 0;
+    color: white;
+    padding: 40px 15% 40px 15%;
+}
+
+.gridFooter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

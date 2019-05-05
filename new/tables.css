@@ -1,0 +1,13 @@
+.cardContainer {
+    width: 100%;
+    padding: 0 20% 0 20%;
+}
+
+.cardRow {
+    background: red;
+    text-align: center;
+}
+
+.card {
+    width: 33%;
+}
