@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Open+Sans:400,400i,700,700i');
 body {
     margin: 0;
     background: url(images/background.jpg);
     background-attachment: fixed;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,6 +45,7 @@ p {
     height: 50px;
     line-height: 50px;
     padding-left: 40px;
+    font-size: 24px;
 }
 
 .menuButton {
@@ -58,6 +58,7 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     cursor: pointer;
+    margin-right: 40px;
 }
 
 .mainBlock {
@@ -85,6 +86,7 @@ p {
     padding: 40px;
     text-align: justify;
     line-height: 20pt;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
 }
 
 .nickInputWrapper {
@@ -128,13 +130,14 @@ p {
 
 .formButton:hover {
     transform: scale(1.03);
+    background: linear-gradient(194deg, rgba(28,214,175,1) 24%, rgba(42,212,29,1) 100%); 
 }
 
 .formButton:active {
     transform: scale(1);
 }
 
-.grid {
+.gridCards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
@@ -161,7 +164,6 @@ p {
     border-radius: 15px;
     height: 120px;
     padding: 40px;
-    font-size: 22px;
     background-image: url(images/img.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -180,7 +182,6 @@ p {
 
 .contactCard.cardEmpty {
     background: none;
-    border: 5px rgba(255, 255, 255, 0.5) dashed;
     transform: none;
 }
 .contactCard.rules {background-color: #f5dfb1; background-image: url(images/rules.png);}
@@ -201,6 +202,7 @@ p {
     margin: 0;
     color: white;
     padding: 40px 15% 40px 15%;
+    line-height: 24px;
 }
 
 .gridFooter {
@@ -227,13 +229,17 @@ p {
         margin: 0;
     }
 
-@media only screen and (max-width: 1330px) {
+@media only screen and (max-width: 1100px) {
     .pageSection.menu {
         display: none;
     }
 
     .mainBlock {
         margin-top: 40px;
+    }
+
+    .mainBlockColumn {
+        text-align: left;
     }
 }
 

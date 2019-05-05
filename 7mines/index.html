@@ -9,12 +9,11 @@
 <body>
     <section class="pageSection menu">
         <div class="buttonContainer">
-            <div class="logo">7Mines.ru</div>
+            <div class="logo"><a href="https://7mines.ru/"><b>7MINES.RU</b></a></div>
             <button class="menuButton">Главная</button>
-            <button class="menuButton">Кнопка</button>
-            <button class="menuButton">Кнопка</button>
-            <button class="menuButton">Кнопка</button>
-            <button class="menuButton">Кнопка</button>
+            <button class="menuButton">Правила</button>
+            <button class="menuButton">ТОП игроков</button>
+            <button class="menuButton">Карта игрового мира</button>
         </div>
     </section>
     <section class="pageSection main">
@@ -25,14 +24,14 @@
                     <p>Это приватный сервер Minecraft на 1.13.2, созданный командой энтузиастов. Обслуживать и поддерживать жизнь сервера очень сложная и требовательная к деньгам затея, однако делать донатную помойку мы не хотим, поэтому решили сделать доступ к серверу по подписке. Каждый месяц игроки, говоря простым языком, скидываются по 200 рублей на все нужды сервера, а взамен получают возможность полноценно играть на проекте, над которым действительно работают и потеют. У нас существуют свои правила, обычаи и понятия, поэтому, перед тем как вливаться в наш коллектив, их следует изучить, после чего ждём всех на нашем сервере, в группе и беседе ВКонтакте, сервере Discord и других ресурсах. Удачи!</p>
                 </div>
                 <div class="mainBlockColumn">
-                    <h1>Купить подписку</h1>
-                    Стоимость удовольствия — <del style="color: gray;">200</del> 70 рублей.<br>
+                    <h1>Приобрести подписку</h1>
+                    Стоимость услуги — <del style="color: gray;">200</del> <b>70</b> рублей.<br>
                     <p>За эту сумму сумму вы получаете ламповую атмосферу, круглосуточную адекватую поддержку разработчиков и удовольствие на целый месяц.</p>
                     <div class="nickInputWrapper">
                         <input type="text" name="username" id="username" maxlength="20" minlength="3" class="Input-text inputNickname" placeholder="Введите ваш никнейм"><br>
                     </div>
                     <div class="formButtonWrapper">
-                        <center><button class="button formButton" type="submit" name="buy" data-toggle="modal">Получить доступ за <del style="color: gray;">200₽</del> 70₽</button></center>
+                        <center><button class="button formButton" type="submit" name="buy" data-toggle="modal"><img src="images/unlock.svg" style="height: 18px; margin-right: 10px;">Получить доступ за <del style="color: rgba(255, 255, 255, 0.5);">200₽</del> 70₽</button></center>
                     </div>
                     <div class="serverIpWrapper">
                         <p>Скопируйте IP-адрес сервера и вставьте в свой игровой клиент:</p>
@@ -41,51 +40,51 @@
                 </div>
     </section>
     <section class="pageSection contacts">
-        <div class="grid">
+        <div class="gridCards">
             <a href=""><div class="contactCard rules">
-                Правила<br>
+                <h2>Правила</h2>
                 <p>Обязательно к прочтению! Не будь быдлом, ознакомься с ними, чтобы не нарушать</p>
             </div></a>
             <a href=""><div class="contactCard vkgroup">
-                Группа ВКонтакте<br>
+                <h2>Группа ВКонтакте</h2>
                 <p>Подпишись и узнавай свежие новости сервера первым!</p>
             </div></a>
             <a href=""><div class="contactCard vkconf">
-                Беседа ВКонтакте<br>
+                <h2>Беседа ВКонтакте</h2>
                 <p>Круглосуточное общение с игроками сервера</p>
             </div></a>
             <a href=""><div class="contactCard discord">
-                Чат в Discord<br>
+                <h2>Чат в Discord</h2>
                 <p>Общение с сообществом сервера в письменном и устном виде, музыка, куча других развлечений</p>
             </div></a>
             <a href=""><div class="contactCard worldmap">
-                Карта сервера<br>
+                <h2>Карта сервера</h2>
                 <p>Полная карта огромного игрового мира</p>
             </div></a>
             <a href=""><div class="contactCard cmds">
-                Доступные команды<br>
+                <h2>Доступные команды</h2>
                 <p>Список большинства полезных доступных игрокам команд</p>
             </div></a>
             <a href=""><div class="contactCard playertop">
-                ТОП игроков<br>
+                <h2>ТОП игроков</h2>
                 <p>Список лидеров сервера, ты тоже сможешь туда попасть!</p>
             </div></a>
-            <a href=""><div class="contactCard cardEmpty">
+            <div class="contactCard cardEmpty">
                 <br>
                 <p></p>
-            </div></a>
-            <a href=""><div class="contactCard cardEmpty">
+            </div>
+            <div class="contactCard cardEmpty">
                 <br>
                 <p></p>
-            </div></a>
+            </div>
         </div> 
     </section>
     <section class="pageSection footer">
         <div class="gridFooter">
             <div>
                 <p>© 7Mines.ru, 2019</p>
-                Разработка вёрстки и дизайна —<br>
-                <a href="https://vk.com/public152487383" target="_blank">vertexofvortex</a>
+                <p style="color:gray;">Разработка вёрстки и дизайна —<br>
+                <a href="https://vk.com/public152487383" target="_blank">vertexofvortex</a></p>
             </div>
             <div>
                 <h3>Навигация</h3>
@@ -96,11 +95,15 @@
                 <a href="">Доступные команды</a><br>
             </div>
             <div><h3>Контакты</h3>
-                <a href="">Сообщество ВКонтакте</a><br>
+                <p><a href="">Сообщество ВКонтакте</a><br>
                 <a href="">Беседа ВКонтакте</a><br>
-                <a href="">Сервер Discord</a><br>
+                <a href="">Сервер Discord</a><br></p>
+                <p style="color:gray;">По всем вопросам пишите в сообщения группы ВКонтакте</p>
             </div> 
-            Здесь будет небольшой дисклеймер. Таким образом, высококачественный прототип будущего проекта способствует повышению качества существующих финансовых и административных условий.
+            <div>
+                <h3>Важная информация</h3>
+                <p style="color:gray;">Таким образом, высококачественный прототип будущего проекта способствует повышению качества существующих финансовых и административных условий.</p>
+            </div>
         </div>
     </section>
 </body>
