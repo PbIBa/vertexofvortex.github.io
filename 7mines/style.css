@@ -1,4 +1,7 @@
+/* Импорт шрифтов с Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i|Open+Sans:400,400i,700,700i');
+
+/* Стили для стандартных тегов */
 body {
     margin: 0;
     background: url(images/background.jpg);
@@ -19,14 +22,17 @@ p {
     margin: 0 0 32px 0;
 }
 
+/* Стиль для <section> */
 .pageSection {
     margin: 0 15% 40px 15%;
 }
 
+/* Стиль блока меню */
 .pageSection.menu {
     margin: 0 0 40px 0;
 }
 
+/* Контейнер кнопок меню */
 .buttonContainer {
     width: 100%;
     min-height: 50px;
@@ -37,6 +43,7 @@ p {
     color: white;
 }
 
+/* Логотип 7mines.ru */
 .logo {
     float: left;
     display: table-cell;
@@ -48,6 +55,7 @@ p {
     font-size: 24px;
 }
 
+/* Кнопка меню */
 .menuButton {
     display: table-cell;
     height: 50px;
@@ -61,6 +69,7 @@ p {
     margin-right: 40px;
 }
 
+/* Основной раздел */
 .mainBlock {
     width: 100%;
     min-height: 500px;
@@ -74,6 +83,7 @@ p {
     background-size: contain;
 }
 
+/* Контейнер CSS-сетки */
 .mainBlockColumnContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -81,6 +91,7 @@ p {
     height: 100%;
 }
 
+/* Колонка в отдельности */
 .mainBlockColumn {
     background: none;
     padding: 40px;
@@ -89,10 +100,12 @@ p {
     text-shadow: 0 1px 0 rgba(255,255,255,0.8);
 }
 
+/* Контейнер поля ввода никнейма */
 .nickInputWrapper {
     padding: 0 40px 20px 0;
 }
 
+/* Поле ввода никнейма */
 .inputNickname {
     width: 100%;
     padding: 15px;
@@ -102,18 +115,19 @@ p {
     font-weight: bold;
     font-size: 16px;
 }
-
 .inputNickname::placeholder {
     color: gray;
     font-weight: normal;
 }
 
+/* Обёртка кнопки покупки */
 .formButtonWrapper {
     padding-right: 40px;
     padding-bottom: 20px;
     width: 100%;
 }
 
+/* Кнопка покупки */
 .formButton {
     width: unset;
     padding: 0 20px 0 20px;
@@ -127,26 +141,18 @@ p {
     cursor: pointer;
     transition: 0.1s cubic-bezier(0,.99, 1, 1);
 }
-
 .formButton:hover {
     transform: scale(1.03);
     background: linear-gradient(194deg, rgba(28,214,175,1) 24%, rgba(42,212,29,1) 100%); 
 }
-
 .formButton:active {
     transform: scale(1);
 }
 
-.gridCards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-}
-
+/* Поле с IP-адресом */
 .serverIpWrapper {
     padding: 0 40px 20px 0;
 }
-
 .serverIp {
     width: 100%;
     padding: 15px;
@@ -159,6 +165,14 @@ p {
     resize: none;
 }
 
+/* CSS-сетка карточек */
+.gridCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+/* Карточка в отдельности */
 .contactCard {
     background: white;
     border-radius: 15px;
@@ -171,15 +185,15 @@ p {
     background-size: contain;
 	transition: 0.1s cubic-bezier(0,.99, 1, 1);
 }
-
 .contactCard:hover {
     transform: translateY(-1%) scale(1.01);
 }
-
 .contactCard:active {
     transform: scale(1);
 }
 
+/* Стили для пустой карточки (хз зачем);
+   Бэкграунды различных карточек  */
 .contactCard.cardEmpty {
     background: none;
     transform: none;
@@ -192,11 +206,12 @@ p {
 .contactCard.cmds {background-color: #60d6d6; background-image: url(images/cmds.png);}
 .contactCard.playertop {background-color: #e0cd6c; background-image: url(images/top.png);}
 
-
+/* Текст карточки */
 .contactCard p {
     font-size: 16px;
 }
 
+/* Раздел футера */
 .footer {
     background: black;
     margin: 0;
@@ -205,14 +220,14 @@ p {
     line-height: 24px;
 }
 
+/* CSS-сетка столбцов текста в футере */
 .gridFooter {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-
-
+/* Адаптивность */
 @media (max-width: 1450px) {
     .pageSection {
         margin: 0 5% 40px 5%;
