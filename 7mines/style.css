@@ -259,13 +259,14 @@ p {
     .mainBlockColumn {
         text-align: left;
     }
+
+    .gridCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 870px) {
-    .contactCard p {
-        display: none;
-    }
-    
     .contactCard {
         height: 8vh;
         vertical-align: middle;
@@ -273,6 +274,37 @@ p {
     }
 
     .footer {
+        display: none;
+    }
+
+    .gridCards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mainBlockColumnContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pageSection.main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .mainBlock {
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .mainBlockColumn {
+        padding: 20px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 670px) {
+    .contactCard p {
         display: none;
     }
 }
