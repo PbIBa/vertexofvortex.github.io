@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Bebas Regular';
-	src: url(../../../fonts/Bebas-Regular.ttf);
+	src: url(fonts/Bebas-Regular.ttf);
 }
 
 @font-face {
 	font-family: 'Bebas Light';
-	src: url(../../../fonts/Bebas-Light.ttf)
+	src: url(fonts/Bebas-Light.ttf)
 }
 
 body {

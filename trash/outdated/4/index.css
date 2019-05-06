@@ -2,27 +2,27 @@
 
 @font-face {
 	font-family: 'Gotham Narrow Medium';
-	src: url(../fonts/GothaProNarMed.otf);
+	src: url(fonts/GothaProNarMed.otf);
 }
 
 @font-face {
 	font-family: 'Gotham Bold';
-	src: url(../fonts/GothaProBol.otf);
+	src: url(fonts/GothaProBol.otf);
 }
 
 @font-face {
 	font-family: 'Gotham Medium';
-	src: url(../fonts/GothaProMed.otf);
+	src: url(fonts/GothaProMed.otf);
 }
 
 @font-face {
 	font-family: 'Gotham Light';
-	src: url(../fonts/GothaProLig.otf)
+	src: url(fonts/GothaProLig.otf)
 }
 
 @font-face {
 	font-family: 'Gotham Regular';
-	src: url(../fonts/GothaProReg.otf);
+	src: url(fonts/GothaProReg.otf);
 }
 
 html, body {
@@ -198,15 +198,15 @@ h2 {
 }
 
 #vk {
-	background: url(../images/vk-logo.svg);
+	background: url(images/vk-logo.svg);
 }
 
 #facebook {
-	background: url(../images/facebook-logo-2.svg);
+	background: url(images/facebook-logo-2.svg);
 }
 
 #instagram {
-	background: url(../images/instagram-logo.svg);
+	background: url(images/instagram-logo.svg);
 }
 
 #vk-group {
