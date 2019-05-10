@@ -70,12 +70,8 @@ hr {
     text-transform: uppercase;
     margin: 0;
     padding: 50px 20% 50px 20%;
-    background: #e04949;
-    color: #000000;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 50px;
-    font-weight: 400;
-    line-height: unset;
+    background: #5384bb;
+    background: linear-gradient(45deg, #6f53bb 0%, #8ae9bd 100%);
     border-radius: unset;
 }
 
@@ -191,6 +187,17 @@ hr {
 .contactsContainer div p {
     line-height: 24px;
     margin-bottom: 0;
+}
+
+section.footer {
+    background: #000000;
+    margin-top: 40px;
+}
+
+section.footer .container {
+    color: #ffffff;
+    padding-bottom: 40px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 @media screen and (max-width: 1600px) {
