@@ -231,14 +231,29 @@ hr {
 }
 
 @media screen and (max-width: 800px) {
-    .contactsContainer div {
+    h1 {
+        font-size: 54px;
+    }
+    .container {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .skillsContainer div {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .projectsContainer div {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .contactsContainer div p {
         min-height: 100px;
+        font-size: 28px;
+        line-height: 36px;
+        transition: none;
     }
     .logo {
         height: 70px;
-    }
-    .contactsContainer div {
-        transition: none;
     }
     .contactsContainer:hover div {
         transform: none;
