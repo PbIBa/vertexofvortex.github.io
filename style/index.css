@@ -219,6 +219,15 @@ hr {
     .contactsContainer {
         grid-template-columns: repeat(1, 1fr);
     }
+    .container {
+        padding: 40px 0 0 0;
+    }
+    .aboutContainer h1.adaptiveclass {
+        margin-bottom: 0;
+    }
+    .coverContainer {
+        padding-bottom: 40px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -227,5 +236,14 @@ hr {
     }
     .logo {
         height: 70px;
+    }
+    .contactsContainer div {
+        transition: none;
+    }
+    .contactsContainer:hover div {
+        transform: none;
+    }
+    .contactsContainer:active div {
+        transform: none;
     }
 }
