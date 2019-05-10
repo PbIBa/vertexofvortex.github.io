@@ -217,14 +217,11 @@ hr {
         grid-template-columns: repeat(1, 1fr);
     }
     .contactsContainer {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media screen and (max-width: 800px) {
-    .contactsContainer {
-        grid-template-columns: repeat(1, 1fr);
-    }
     .contactsContainer div {
         min-height: 100px;
     }
