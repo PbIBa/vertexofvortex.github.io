@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto:100,300,400,500,700,900');
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #2C3540;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+
+h1.nomargin {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+section {
+    width: 100%;
+}
+
+hr {
+    margin: 40px 0 0px 0;
+    border: 0;
+    background: #ffffff;
+    height: 2px;
+}
+
+.container {
+    padding: 40px 40px 40px 40px;
+    margin: 0 15% 0 15%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    border-radius: 10px;
+}
+
+.aboutContainer {
+    color: #ffffff;
+}
+
+.textContainer {
+    color: #ffffff;
+}
+
+.coverContainer {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 50px 20% 50px 20%;
+    background: #e04949;
+    color: #000000;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: unset;
+    border-radius: unset;
+}
+
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    background: none;
+    padding: 0;
+}
+
+.skillsContainer div {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    line-height: 24px;
+}
+
+.container a {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 3px;
+    font-weight: 900;
+    text-decoration: none;
+    color: unset;
+}
+
+.container a:hover {
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+}
+
+.skillsContainer div#design {
+    background: rgb(241,187,115);
+    background: linear-gradient(45deg, rgba(241,187,115) 0%, rgba(255,228,193) 100%);
+}
+.skillsContainer div#webdev {
+    background: rgb(115, 241, 125);
+    background: linear-gradient(45deg, rgb(115, 241, 125) 0%, rgb(115, 255, 193) 100%);
+}
+.skillsContainer div#coding {
+    background: rgb(115, 128, 241);
+    background: linear-gradient(45deg, rgb(115, 128, 241) 0%, rgba(115,228,193,1) 100%);
+}
+
+
+.skillsContainer div .icon {
+    width: 100%;
+    margin-bottom: 40px;
+    height: 120px;
+    opacity: 0.75;
+}
+
+.projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding: 0;
+}
+
+.projectsContainer div {
+    background: #ffffff;
+    border-radius: 10px;
+    line-height: 24px;
+}
+
+.projectsContainer .cardImg {
+    padding: 0;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cardImg#sevenmines {
+    background: url(../images/projects/7mines.jpg);
+    background-size: cover;
+}
+
+.cardImg#vkgroup {
+    background: url(../images/projects/vkgroup.jpg);
+    background-size: cover;
+}
+
+.projectsContainer .cardText {
+    padding: 40px;
+}
+
+.skillsContainer h2.prog::after {
+    animation: slash 1s infinite;
+}
+
+.contactsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 0;
+}
+
+.contactsContainer div {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    transition: 0.1s cubic-bezier(0,.99, 1, 1);
+}
+.contactsContainer div:hover {
+    transform: translateY(-1%) scale(1.01);
+}
+.contactsContainer div:active {
+    transform: scale(1);
+}
+
+.contactsContainer div p {
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1600px) {
+    .container {
+        margin: 0 5% 0 5%;
+    }
+    .coverContainer {
+        padding: 50px 5% 50px 5%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .skillsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .skillsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .projectsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contactsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .contactsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contactsContainer div {
+        min-height: 100px;
+    }
+}

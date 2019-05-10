@@ -227,6 +227,19 @@ p {
     gap: 20px;
 }
 
+/* Скриншоты */
+.gridScreenshots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.screenshot {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
 /* Адаптивность */
 @media screen and (max-width: 1450px) {
     .pageSection {
@@ -300,6 +313,15 @@ p {
     .mainBlockColumn {
         padding: 20px;
         font-size: 20px;
+    }
+
+    .gridScreenshots {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pageSection.screenshots {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
