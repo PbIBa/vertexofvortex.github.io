@@ -23,6 +23,7 @@ h1.nomargin {
 
 p {
     margin-top: 0;
+    margin-bottom: 40px;
 }
 
 h1,
@@ -58,6 +59,7 @@ hr {
 
 .aboutContainer {
     color: #ffffff;
+    padding-bottom: 0;
 }
 
 .textContainer {
@@ -75,6 +77,10 @@ hr {
     font-weight: 400;
     line-height: unset;
     border-radius: unset;
+}
+
+.logo {
+    height: 100px;
 }
 
 .skillsContainer {
@@ -213,14 +219,16 @@ hr {
     .contactsContainer {
         grid-template-columns: repeat(2, 1fr);
     }
-    
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .contactsContainer {
         grid-template-columns: repeat(1, 1fr);
     }
     .contactsContainer div {
         min-height: 100px;
+    }
+    .logo {
+        height: 70px;
     }
 }
