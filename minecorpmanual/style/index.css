@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+.sectionWrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    color: white;
+}
+
+.sectionContainer {
+    height: inherit;
+    width: 100%;
+    margin-top: 10vw;
+
+}
+
+.sectionContainer p {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.sectionContainer p:hover {
+    opacity: 0.75;
+    transition: 0.3s cubic-bezier(0, 0, 1, 0);
+}
+
+.sectionContainer .description {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    padding-right: 30%;
+}
+
+.verticalSection {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sectionWrapper {
+    height: 100%;
+}
+
+.verticalSection.left {
+    background: #35af53;
+    background-image: url(../images/leftpattern.png);
+    background-size: 20%;
+    background-position: center;
+    transition: 0.3s cubic-bezier(0, 0, 1, 0);
+    border: 0px solid white;
+}
+
+.verticalSection.right {
+    background: #af3535;
+    background-image: url(../images/rightpattern.png);
+    background-size: 20%;
+    background-position: center;
+    transition: 0.3s cubic-bezier(0, 0, 1, 0);
+    border: 0px solid white;
+}
+
+.verticalSection:hover {
+    border: 30px white solid;
+    transition: 0.3s cubic-bezier(0, 0, 1, 0);
+    background-size: 25%;
+}
+
+.arrowGo {
+    height: 40px;
+    width: auto;
+}
