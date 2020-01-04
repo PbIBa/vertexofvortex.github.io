@@ -64,7 +64,7 @@ a {
 
 .verticalSection.left {
     background: #35af53;
-    background-image: url(../images/leftpattern.png);
+    background-image: url(images/pattern_newbie.png);
     background-size: 20%;
     background-position: center;
     transition: 0.3s cubic-bezier(0, 0, 1, 0);
@@ -73,7 +73,7 @@ a {
 
 .verticalSection.right {
     background: #af3535;
-    background-image: url(../images/rightpattern.png);
+    background-image: url(images/pattern_skilled.png);
     background-size: 20%;
     background-position: center;
     transition: 0.3s cubic-bezier(0, 0, 1, 0);
@@ -84,9 +84,4 @@ a {
     border: 30px white solid;
     transition: 0.3s cubic-bezier(0, 0, 1, 0);
     background-size: 25%;
-}
-
-.arrowGo {
-    height: 40px;
-    width: auto;
 }
