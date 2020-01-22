@@ -1,6 +1,14 @@
 /* ==UserStyle==
-@name         test
+@name         MineCorp Dark Reloaded
+@namespace    https://github.com/vertexofvortex/vertexofvortex.github.io
+@homepageURL  https://github.com/vertexofvortex/vertexofvortex.github.io
+@version      1.0.0
+@license      Other
+@description  theme is theme
+@author       vertexofvortex
+@preprocessor uso
 ==/UserStyle== */
+@-moz-document regexp("forum.minecorp.ru") {
 body,
 a,
 span,
@@ -122,4 +130,5 @@ border: default;
 }
 .fancy_spoiler_switcher {
 	border-radius: 6px;
+}
 }
