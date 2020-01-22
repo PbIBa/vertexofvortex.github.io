@@ -1,11 +1,13 @@
 /* ==UserStyle==
-@name        MineCorp Advanced
-@namespace   StylusThemes
-@version     1.0.0
-@homepageURL 
-@updateURL   https://raw.githubusercontent.com/vertexofvortex/vertexofvortex.github.io/master/files/corpadvanced.user.css
-@license     none
-@author      vertexofvortex
+@name         MineCorp Dark Reloaded
+@namespace    
+@homepageURL  
+@version      1.0.0
+@license      Other
+@description  Ну типа это самое, бля, ну обновление, не, не обновление, короче, переделанный с нуля считай стиль, тот, ебать, ну это самое, MineCorp Dark, во.
+@author       vertexofvortex (https://vk.com/vrtxxx)
+@preprocessor less
+==/UserStyle== */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap&subset=cyrillic');
 
