@@ -8,7 +8,7 @@
 @author       vertexofvortex
 @preprocessor uso
 ==/UserStyle== */
-@-moz-document regexp("forum.minecorp.ru") {
+@-moz-document domain("forum.minecorp.ru") {
 body,
 a,
 span,
