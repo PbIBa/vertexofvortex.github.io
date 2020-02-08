@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap&subset=cyrillic');
+
 html,
 body {
     height: 100%;
     margin: unset;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
 }
 a {
     text-decoration: none;
+}
+.contentWrapper {
+    padding-right: 20vw;
+    padding-left: 20vw;
 }
 
 /* MENU BAR */
@@ -32,7 +43,7 @@ a {
 #menu .buttonsWrapper {
     padding-right: 10vw;
 }
-#menu .buttonsWrapper button {
+#menu .buttonsWrapper a {
     float: right;
     line-height: 50px;
     min-width: 150px;
@@ -40,96 +51,100 @@ a {
     margin-left: 20px;
     padding: 0 20px 0 20px;
     color: white;
-    border-bottom: 2px solid tomato;
+    border-top: 5px solid tomato;
     text-align: center;
 }
 
 /* COVER SECTION */
 #cover {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     background-image: url(img/cover.jpg);
-    background-size: cover;
     background-position: center;
-    display: table;
+    background-size: cover;
 }
 #cover .contentWrapper {
+    width: 60%;
+    height: 100%;
+    background: #131313;
+    padding: 0;
+    display: table;
+}
+#cover .contentWrapper .container {
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
-    text-align: center;
+    max-width: 100%;
+    padding: 0 0 0 5vw;
+}
+#cover {
     color: white;
-    background-color: rgba(0, 0, 0, 0.75);
 }
-#cover .contentWrapper div#intro {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-#cover .contentWrapper div#nickname {
-    font-size: 48px;
-    margin-bottom: 30px;
-    letter-spacing: 15px;
+#cover #intro {
+    font-size: 2.5em;
     text-transform: uppercase;
+    font-weight: bolder;
 }
-#cover .contentWrapper a {
-    font-size: 16px;
-    padding: 10px;
-    height: 50px;
-    width: 250px;
-    background: none;
-    border: 2px solid tomato;
-    color: white;
-    border-radius: 5px;
+#cover #nickname {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: tomato;
 }
-#cover .contentWrapper button:hover {
-    background-color: tomato;
-    cursor: pointer;
+#cover #bio {
+    margin-top: 10px;
 }
 
-
+/*  */
 #hello {
-    padding: 100px 10vw 100px 10vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: rgb(34, 34, 34);
     border: 10px solid tomato;
     color: white;
 }
 #hello .contentWrapper {
-    padding: 0 0vw 0 0vw;
-    display: table;
+
 }
 #hello .contentWrapper #about {
     text-align: justify;
-    padding: 0 20vw 0 20vw;
+    padding: 0 10vw 0 10vw;
     margin-bottom: 100px;
 }
 #hello .contentWrapper #interests {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 30px;
     margin-bottom: 60px;
 }
 #hello .contentWrapper #interests.secondary {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
-#hello .contentWrapper #interests .card {
-    background-color: tomato;
+#interests .card {
+    background: none;
     padding: 20px;
-    display: grid;
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: 1fr;
-    min-height: 80px;
+    height: fit-content;
+    background: tomato;
     border-radius: 5px;
 }
-
-#hello .contentWrapper #interests .card img {
-    height: 80px;
+#interests .card img,
+#interests .card svg {
+    width: 100%;
+    height: inherit;
+    fill: white;
 }
-#hello .contentWrapper #interests .card span {
-    padding: 0px;
-    padding-left: 20px;
+#interests .card div {
+    padding: 20px;
     margin: 0px;
     font-weight: bold;
     font-size: 22px;
+}
+#interests .card h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+#interests .card p {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
