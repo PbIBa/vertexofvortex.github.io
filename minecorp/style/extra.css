@@ -39,11 +39,7 @@
         display: none;
     }
     #cover {
-        position: relative;
         height: unset;
-        background-image: url(../images/cover.jpg);
-        background-size: cover;
-        top: 0px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -69,9 +65,6 @@
         border: none;
         padding: 0px;
         color: #fff
-    }
-    #lastUpdate {
-        display: none;
     }
     .productCard {
         height: 300px;
