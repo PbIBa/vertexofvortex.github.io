@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<head>
+    <title>Сервер MineCorp</title>
+    <link href="style/index.css" rel="stylesheet" href="style.css">
+    <link href= "style/extra.css" rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icons/favicon.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--<div style="display: table; width: 100%">
+        <div style="height: 515px; background: #ccc; display: table-cell; vertical-align: middle;"><center>Здесь должна быть шапка с главной страницы.</center></div>
+    </div>-->
+    <nav id="navbar">
+        <div id="navbarItemWrapper">
+            <img src="images/logoNew.png">
+            <a href="" class="navbarItem">Покупка доната</a>
+            <a href="" class="navbarItem">Форум</a>
+            <a href="" class="navbarItem">Мы ВКонтакте</a>
+            <a href="" class="navbarItem">Мы в Discord</a>
+        </div>
+    </nav>
+    <div id="mapWrapper">
+        <iframe id="map" src="http://map.minecorp.ru/" frameborder="0" vspace="0"></iframe>
+    </div>
+    <div id="cover">
+        <div id="info">
+            <div id="desc">
+                <span id="heading">Выживание<br>Креатив<br>Мини игры</span><br>
+                <span>Это комплекс серверов майнкрафт. Здесь все создано для комфортной игры! Уютная атмосфера, сплоченная команда проекта! Все продумано до мелочей, и ничего лишнего! </span>
+            </div>
+        </div>
+        <div id="onlineloginWrapper">
+            <div id="online">
+                <h3 style="margin: 0px; margin-bottom: 10px;">Сейчас в игре <span style="font-family: 'Consolas', monospace;">231 игрок</span></h3>
+                <div class="progressbar"><div class="progressbarBar" style="width: 65%"></div></div>
+                <h4 style="margin: 0px; margin-bottom: 10px;">из них на классике: <span style="font-family: 'Consolas', monospace;">111</span></h4>
+                <div class="progressbar"><div class="progressbarBar" style="width: 45%"></div></div>
+                <h4 style="margin: 0px; margin-bottom: 10px;">из них на креативе: <span style="font-family: 'Consolas', monospace;">120</span></h4>
+                <div class="progressbar"><div class="progressbarBar" style="width: 55%"></div></div>
+            </div>
+            <div id="login">
+                <input type="text">
+                <input type="text">
+                <a href=""><div><center>Войти</center></div></a>
+            </div>
+        </div>
+    </div>
+    <section id="lastUpdate">
+        <span><b>Последнее обновление:</b> добавлена мини игра Bridge с Hypixel!</span>
+    </section>
+    <div class="heading"><h1>Покупка привилегии</h1></div>
+    <section id="nickname">
+        <span>Введите ваш игровой никнейм на сервере </span>
+        <input type="text" name="nickname" maxlength="25">
+        <span> и нажмите на карточку с донатом, который хотите приобрести.</span>
+    </section>
+    <section id="products">
+        <a href="#" class="productCard classic isSale" id="vip">
+            <span class="server">Классик</span><br>
+            <span class="donateName">VIP</span><br>
+            <span class="price">100 руб.</span><br>
+            <span class="priceDiscount">50 руб.</span></span><span class="percent">-75%</span><br>
+            <span class="bought">Уже приобретено</span>
+        </a>
+        <a href="#" class="productCard classic isSale" id="creative">
+            <span class="server">Классик</span><br>
+            <span class="donateName">Креатив</span><br>
+            <span class="price">200 руб.</span><br>
+            <span class="priceDiscount">50 руб.</span><span class="percent">-75%</span><br>
+            <span class="bought">Уже приобретено</span>
+        </a>
+        <a href="#" class="productCard classic" id="moderator">
+            <span class="server">Классик</span><br>
+            <span class="donateName">Модератор</span><br>
+            <span class="price">300 руб.</span><br>
+            <span class="priceDiscount">50 руб.</span></span><span class="percent">-75%</span><br>
+            <span class="bought">Уже приобретено</span>
+        </a>
+        <a href="#" class="productCard classic" id="admin">
+            <span class="server">Классик</span><br>
+            <span class="donateName">Админ</span><br>
+            <span class="price">400 руб.</span><br>
+            <span class="priceDiscount">50 руб.</span></span><span class="percent">-75%</span><br>
+            <span class="bought">Уже приобретено</span>
+        </a>
+        <a href="#" class="productCard creative isBought" id="vip">
+            <span class="server">Креатив</span><br>
+            <span class="donateName">VIP</span><br>
+            <span class="price">100 руб.</span><br>
+            <span class="priceDiscount">50 руб.</span></span><span class="percent">-75%</span><br>
+            <span class="bought">Уже приобретено</span>
+        </a>
+        <a href="#" class="productCard creative isBought" id="premium">
+            <span class="server">Креатив</span><br>
+            <span class="donateName">Премиум</span><br>
+            <span class="price">100 руб.</span><br>
+            <span class="priceDiscount">50 руб.</span></span><span class="percent">-75%</span><br>
+            <span class="bought">Уже приобретено</span>
+        </a>
+        <a href="#" class="productCard creative" id="deluxe">
+            <span class="server">Креатив</span><br>
+            <span class="donateName">Делюкс</span><br>
+            <span class="price">200 руб.</span><br>
+            <span class="priceDiscount">50 руб.</span></span><span class="percent">-75%</span><br>
+            <span class="bought">Уже приобретено</span>
+        </a>
+        <a href="#" class="productCard creative isSale" id="ultimate">
+            <span class="server">Креатив</span><br>
+            <span class="donateName">Ультимейт</span><br>
+            <span class="price">300 руб.</span><br>
+            <span class="priceDiscount">200 руб.</span></span><span class="percent">-33%</span><br>
+            <span class="bought">Уже приобретено</span>
+        </a>
+    </section>
+    <section id="about">
+        <div class="heading" id="aboutHeading"><h2>Почему покупают именно у нас?</h2></div>
+        <div id="aboutCardsWrapper">
+            <div class="aboutCard">
+                <div class="iconWrapper"><img src="images/icons/money-check-alt-solid.svg"></div>
+                <span class="cardHeading">Без комиссии</span><br>
+                <span class="cardText">Берём на себя все комиссии для всех способов оплаты!</span>
+            </div>
+            <div class="aboutCard">
+                <div class="iconWrapper"><img src="images/icons/calendar-check-regular.svg"></div>
+                <span class="cardHeading">Навсегда</span><br>
+                <span class="cardText">Приивилегии не теряются при вайпах и ЧП. У некоторых они с 2012 года.</span>
+            </div>
+            <div class="aboutCard">
+                <div class="iconWrapper"><img src="images/icons/cart-plus-solid.svg"></div>
+                <span class="cardHeading">Доплата</span><br>
+                <span class="cardText">При покупке следующей привилегии сумма будет уменьшена на стоимость предыдущей!</span>
+            </div>
+            <div class="aboutCard">
+                <div class="iconWrapper"><img src="images/icons/grin-stars-solid.svg"></div>
+                <span class="cardHeading">Реальные привилегии</span><br>
+                <span class="cardText">Наша админка — это настоящая админка со многими командами WorldEdit, системой банов и многим другим!</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="footerContentWrapper">
+            <div id="rights">
+                <h3>Права</h3>
+                <p><b>© MineCorp 2012—2020</b> — комплекс серверов майнкрафт версий 1.8—1.14: выживание, креатив, мини-игры</p>
+                <p>Разработка страницы: <a href="">vertexofvortex</a></p>
+                <p>Icons/иконки: <a href="">fontawesome.com</a></p>
+                <p style="margin-top: 30px;"><a href="http://minecorp.ru/terms">Пользовательское соглашение</a></p>
+            </div>
+            <div id="links">
+                <h3>Ссылки</h3>
+                <p><a href="">Наверх страницы</a></p>
+                <p><a href="">Форум проекта</a></p>
+                <p><a href="">Динамическая онлайн-карта</a></p>
+                <p><a href="">Группа ВКонакте</a></p>
+                <p><a href="">Сервер в Discord</a></p>
+                <p><a href="http://minecraftmonitoring.ru/server-minecorp">MinecraftMonitoring</a></p>
+                <p><a href="http://monitoringminecraft.ru/server/403">MonitoringMinecraft.Ru</a></p>
+            </div>
+            <div id="logo">
+                <img src="images/logoNew.png">
+            </div>
+        </section>
+    </footer>
+</body>

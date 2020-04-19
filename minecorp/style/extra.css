@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@media screen and (max-width: 1470px) {
+    #products, #aboutCardsWrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #products, #aboutCardsWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer img {
+        display: none;
+    }
+    #footerContentWrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer #logo {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 730px) {
+    div.heading {
+        display: block;
+    }
+    #aboutHeading {
+        padding-left: 0px;
+    }
+    section, div.heading {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    #products, #aboutCardsWrapper {
+        grid-template-columns: 1fr;
+    }
+    #map {
+        display: none;
+    }
+    #mapWrapper {
+        display: none;
+    }
+    #cover {
+        position: relative;
+        height: unset;
+        background-image: url(../images/cover.jpg);
+        background-size: cover;
+        top: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #cover {
+        grid-template-columns: 1fr;
+    }
+    #info {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+    #onlineloginWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 30px;
+        padding-right: 30px;
+        flex-basis: unset;
+    }
+    #online, #login {
+        width: 100%;
+        max-width: unset;
+        background: none;
+        border: none;
+        padding: 0px;
+        color: #fff
+    }
+    #lastUpdate {
+        display: none;
+    }
+    .productCard {
+        height: 300px;
+    }
+    #nickname input {
+        background: none;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid #dadada;
+        padding: 0px;
+        margin: 0px;
+    }
+    #footerContentWrapper {
+        grid-template-columns: 1fr;
+    }
+    #footerContentWrapper #rights {
+        padding-bottom: 0px;
+    }
+    #footerContentWrapper #links {
+        padding-top: 0px;
+    }
+}
+
+@keyframes mapSearching {
+    0% {
+        transform: scale(1.2);
+    }
+    30% {
+        transform: scale(2) translateX(50px) translateY(-100px);
+    }
+    60% {
+        transform: scale(1.5) translateX(-100px) translateY(50px);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+@keyframes bg-anim-flow {
+    0% {background-position-y: 0%;}
+    100% {background-position-y: -200px;}
+}

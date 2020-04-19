@@ -1,0 +1,345 @@
+body {
+    background: #f2f2f2;
+    margin: 0px;
+    font-family: 'Manrope', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+p {
+    margin-top: 0px;
+}
+h1 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: 900 !important;
+    letter-spacing: 4px !;
+}
+#navbar {
+    width: 100%;
+    height: 50px;
+    background: #202020;
+    color: #dadada;
+}
+#navbarItemWrapper {
+    height: 100%;
+    padding-right: 12vw;
+    padding-left: 12vw;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#navbar img {
+    height: 30px;
+}
+#navbar a {
+    transition: 0.1s ease-in-out;
+}
+#navbar a:hover {
+    color: #fff;
+}
+iframe#map {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    animation: mapSearching 10s infinite ease-in-out;
+}
+#mapWrapper {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+#cover {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8967787798713235) 0%, rgba(0,0,0,0.6026611328125) 100%);
+    position: absolute;
+    top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#onlineloginWrapper, #info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-end;
+    gap: 20px;
+}
+#info {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 12vw;
+}
+#onlineloginWrapper {
+    padding-right: 12vw;
+}
+#logoWrapper, #desc {
+    width: fit-content;
+    color: #fff;
+}
+#desc #heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+#logoWrapper {
+    background-image: url(../images/logoNew.png);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 150px;
+}
+#online, #login {
+    flex-basis: 150px;
+    width: 50%;
+    max-width: 50%;
+    background: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.progressbar {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.progressbarBar {
+    height: 5px;
+    border-radius: 5px;
+    background: #20b44c;
+    box-shadow: 0px 5px 10px 0px rgb(32, 180, 76, 0.5);
+}
+#login input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    font: unset;
+    cursor: pointer;
+}
+#login div {
+    width: 100%;
+    background-color: #20b44c;
+    line-height: 50px;
+    border: 1px solid #1b943f;
+    border-radius: 5px;
+    color: #fff;
+}
+section, div.heading {
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+div.heading {
+    display: flex;
+    justify-content: center;
+}
+#lastUpdate {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    background: #202020;
+    color: #dadada;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#nickname {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+#nickname input {
+    margin-top: 20px;
+    width: fit-content;
+    background: #fff;
+    border: 1px solid #dadada;
+    font-size: inherit;
+    font-family: 'Consolas', monospace;
+    padding: 10px;
+    border-radius: 5px;
+}
+#products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 30px;
+}
+.productCard {
+    background: white;
+    border: solid 1px #dadada;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 0px 0px #1b943f;
+    height: 350px;
+    padding: 30px;
+    min-width: 200px;
+    border-radius: 5px;
+    background-image: url(../images/icons/blocks/block.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    background-origin: padding-box;
+    transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow ease-in-out 0.4s;
+    position: relative;
+}
+.productCard:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1), inset 0px 0px 0px 10px #1b943f;
+}
+.productCard.creative {
+    box-shadow: #ab47ba !important;
+}
+.productCard:focus {
+    transform: scale(1.02);
+    transition-duration: 0.1s;
+}
+.productCard .server {
+    font-size: 16px;
+}
+.productCard.classic .server {color: #358d3d;}
+.productCard.creative .server {color: #ab47ba;}
+
+.productCard.classic#vip {background-image: url(../images/icons/blocks/block-cl-vip.png);}
+.productCard.classic#creative {background-image: url(../images/icons/blocks/block-cl-creative.png);}
+.productCard.classic#moderator {background-image: url(../images/icons/blocks/block-cl-moderator.png);}
+.productCard.classic#admin {background-image: url(../images/icons/blocks/block-cl-admin.png);}
+
+.productCard.creative#vip {background-image: url(../images/icons/blocks/block-cr-vip.png);}
+.productCard.creative#premium {background-image: url(../images/icons/blocks/block-cr-premium.png);}
+.productCard.creative#deluxe {background-image: url(../images/icons/blocks/block-cr-deluxe.png);}
+.productCard.creative#ultimate {background-image: url(../images/icons/blocks/block-cr-ultimate.png);}
+
+.productCard .donateName {
+    font-size: 34px;
+    font-weight: 900;
+}
+.productCard .price {
+    padding-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1b943f;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.productCard:hover .price {
+    font-size: 24px;
+    font-weight: 900;
+}
+.productCard .priceDiscount {
+    font-size: 26px;
+    font-weight: 900;
+    color: #1b943f;
+    display: none;
+    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.productCard:hover .priceDiscount {
+    font-size: 32px;
+}
+.productCard .bought {
+    color: #ee524f;
+    font-weight: bold;
+    display: none;
+}
+.productCard.isBought .bought {
+    display: unset;
+}
+.productCard.productCard.isBought .price, .productCard.productCard.isBought .priceDiscount {
+    display: none;
+}
+.productCard.isSale .priceDiscount {
+    display: unset;
+}
+.productCard .percent {
+    background: #1b943f;
+    padding: 2px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #fff;
+    display: none;
+    transition: 0.5s ease-in-out;
+}
+.productCard.isSale .percent {
+    display: unset;
+}
+.productCard.isSale:hover .percent {
+    font-weight: 900;
+}
+.productCard.isSale .price, .productCard.isSale:hover .price {
+    color: gray;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+#aboutCardsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-bottom: 30px;
+}
+#about {
+    background: #dadada;
+    background-image: url(../images/bglogo2.png);
+    background-size: 200px;
+    background-attachment: fixed;
+    animation: bg-anim-flow 4s infinite linear;
+}
+.aboutCard .iconWrapper {
+    display: inline;
+}
+.aboutCard .iconWrapper img {
+    display: inline-block;
+    height: 70px;
+    height: 22px;
+    padding-right: 5px;
+}
+.aboutCard#comission .cardIcon {background-image: url(../images/icons/money-check-alt-solid.svg);}
+.aboutCard .cardHeading {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer {
+    background: #202020;
+    min-height: 200px;
+    color: #dadada;
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer h3 {
+    margin-top: 0px;
+}
+footer #rights a {
+    border-bottom: 1px solid #dadada;
+}
+footer a:hover {
+    color: #fff;
+}
+#footerContentWrapper {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    grid-gap: 30px;
+}
+#footerContentWrapper div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#footerContentWrapper #logo {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#footerContentWrapper img {
+    height: 150px;
+    width: unset;
+}
